@@ -5,7 +5,7 @@ module.exports = [{
   path: '/',
   handler: (request, h) => {
     return {
-      hello: 'world'
+      hello: 'elephants'
     }
   }
 }, {
