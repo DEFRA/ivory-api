@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.com/DEFRA/hapi-api-boilerplate.svg?branch=master)](https://travis-ci.com/DEFRA/hapi-api-boilerplate) [![Maintainability](https://api.codeclimate.com/v1/badges/c1b6847c119ba19a8ae3/maintainability)](https://codeclimate.com/github/DEFRA/hapi-api-boilerplate/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/c1b6847c119ba19a8ae3/test_coverage)](https://codeclimate.com/github/DEFRA/hapi-api-boilerplate/test_coverage) [![Greenkeeper badge](https://badges.greenkeeper.io/DEFRA/hapi-api-boilerplate.svg)](https://greenkeeper.io/)
 
 # (Enter service name)
-(Description of the service)
+Ivory API Service
 
 # Environment variables
 (Be sure to describe any environment variables here by maintaining a list like this)
