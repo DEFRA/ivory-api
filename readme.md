@@ -19,7 +19,7 @@ Node v14+
 
 ## Project structure
 
-Here's the default structure for your project files.
+Here's the default structure for the project files.
 
 * **server**
   * **plugins**
