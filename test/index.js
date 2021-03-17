@@ -19,7 +19,7 @@ lab.experiment('API test', () => {
 
     const response = await server.inject(options)
     Code.expect(response.statusCode).to.equal(200)
-    Code.expect(response.result).to.equal({ hello: 'world' })
+    Code.expect(response.result).to.equal({ hello: 'elephants' })
   })
 
   lab.test('GET /about route works', async () => {
