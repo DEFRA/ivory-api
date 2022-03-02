@@ -1,11 +1,11 @@
-<ImportExportXml version="9.2.22015.127" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<ImportExportXml version="9.2.22021.128" SolutionPackageVersion="9.2" languagecode="1033" generatedBy="CrmLive" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <SolutionManifest>
     <UniqueName>IvoryService</UniqueName>
     <LocalizedNames>
       <LocalizedName description="Ivory Service" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.60</Version>
+    <Version>1.0.0.61</Version>
     <Managed>1</Managed>
     <Publisher>
       <UniqueName>Crbc637</UniqueName>
@@ -112,6 +112,7 @@
       <RootComponent type="29" id="{d2a2931d-496e-ec11-8943-00224840509f}" behavior="0" />
       <RootComponent type="29" id="{e36deb1f-dc6e-ec11-8943-00224840509f}" behavior="0" />
       <RootComponent type="29" id="{e3ec8ae6-5396-ec11-b400-6045bd0ee6d8}" behavior="0" />
+      <RootComponent type="29" id="{fab9c140-5e99-ec11-b400-0022483f7e2c}" behavior="0" />
       <RootComponent type="29" id="{fe7ce34a-8d01-ec11-94ef-000d3ad67de4}" behavior="0" />
       <RootComponent type="31" id="{0679c142-e238-ec11-8c64-000d3a0afbee}" behavior="0" />
       <RootComponent type="31" id="{2079d90d-d23b-ec11-8c62-0022484340ac}" behavior="0" />
@@ -127,6 +128,18 @@
       <MissingDependency>
         <Required type="61" schemaName="msdyn_/Images/AppModule_Default_Icon.png" displayName="msdyn_/Images/AppModule_Default_Icon.png" solution="AppModuleWebResources (2.5)" />
         <Dependent type="80" schemaName="cre2c_IvoryDeclarationManagementSystem" displayName="Manage ivory declarations" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2202.1011)" />
+        <Dependent type="60" displayName="Section 10" parentDisplayName="Ivory Section 10 Case" id="{0fa14173-ea38-430b-8adf-bd83b0065aaf}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.FieldControls.ToggleControl" displayName="MscrmControls.FieldControls.ToggleControl" solution="BaseCustomControlsCore (9.0.2202.1011)" />
+        <Dependent type="60" displayName="Section 2" parentDisplayName="Ivory Section 2 Case" id="{81e31ef2-0346-4f58-91d2-548c3222bfe0}" />
+      </MissingDependency>
+      <MissingDependency>
+        <Required type="66" schemaName="MscrmControls.NumberInput.NumberInputControl" displayName="MscrmControls.NumberInput.NumberInputControl" solution="BaseCustomControlsCore (9.0.2202.1011)" />
+        <Dependent type="60" displayName="Section 10" parentDisplayName="Ivory Section 10 Case" id="{0fa14173-ea38-430b-8adf-bd83b0065aaf}" />
       </MissingDependency>
     </MissingDependencies>
   </SolutionManifest>

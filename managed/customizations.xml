@@ -1990,7 +1990,7 @@
               <IsFilterable>0</IsFilterable>
               <IsRetrievable>0</IsRetrievable>
               <IsLocalizable>0</IsLocalizable>
-              <AppDefaultValue>1</AppDefaultValue>
+              <AppDefaultValue>0</AppDefaultValue>
               <optionset Name="cre2c_cre2c_ivorysection10case_hasuniquefeatures">
                 <OptionSetType>bit</OptionSetType>
                 <IntroducedVersion>1.0.0.52</IntroducedVersion>
@@ -2229,7 +2229,7 @@
               <IsRetrievable>0</IsRetrievable>
               <IsLocalizable>0</IsLocalizable>
               <Format>none</Format>
-              <MinValue>1</MinValue>
+              <MinValue>3</MinValue>
               <MaxValue>20</MaxValue>
               <displaynames>
                 <displayname description="Number of items" languagecode="1033" />
@@ -4709,11 +4709,11 @@
                               </cell>
                             </row>
                             <row>
-                              <cell id="{f1429aef-913f-40a9-9f65-661d410754b3}" locklevel="0" colspan="1" rowspan="1">
+                              <cell locklevel="0" id="{61c7a4c1-951c-48da-b5cf-7dfd229f02e0}" colspan="1" rowspan="1">
                                 <labels>
                                   <label description="Manually created" languagecode="1033" />
                                 </labels>
-                                <control id="cre2c_manuallycreated" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cre2c_manuallycreated" disabled="true" />
+                                <control id="cre2c_manuallycreated" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_manuallycreated" disabled="true" uniqueid="{0bfb516e-59c5-4ca1-b9fb-4ffb190cdc97}" />
                               </cell>
                             </row>
                           </rows>
@@ -4724,19 +4724,19 @@
                           </labels>
                           <rows>
                             <row>
-                              <cell id="{b6c7eea7-45bb-435e-a1a2-355cbcca937e}" locklevel="0" colspan="1" rowspan="1">
+                              <cell locklevel="0" id="{24a2ddbb-0208-402e-8f1d-290aa8c9b092}" colspan="1" rowspan="1">
                                 <labels>
-                                  <label description="Is this a group registration?" languagecode="1033" />
+                                  <label description="Group registration" languagecode="1033" />
                                 </labels>
-                                <control id="cre2c_groupregistration" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cre2c_groupregistration" disabled="false" />
+                                <control id="cre2c_groupregistration" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_groupregistration" disabled="false" uniqueid="{99915944-a2c7-4d19-8378-5aebc50af212}" />
                               </cell>
                             </row>
                             <row>
-                              <cell id="{656c0efc-8308-4e0e-93e1-93ea509a569d}" locklevel="0" colspan="1" rowspan="1">
+                              <cell locklevel="0" id="{738a5d0d-842d-45f8-a2be-4bd4e39da115}" colspan="1" rowspan="1">
                                 <labels>
                                   <label description="Number of items" languagecode="1033" />
                                 </labels>
-                                <control id="cre2c_numberofitems" classid="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}" datafieldname="cre2c_numberofitems" disabled="false" />
+                                <control id="cre2c_numberofitems" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_numberofitems" disabled="false" uniqueid="{cd46cb91-79b5-4c49-b8d7-7e386cbd444a}" />
                               </cell>
                             </row>
                           </rows>
@@ -4840,11 +4840,11 @@
                               </cell>
                             </row>
                             <row>
-                              <cell id="{45994700-487a-4cca-93f1-f8a40963558f}" locklevel="0" colspan="1" rowspan="1">
+                              <cell locklevel="0" id="{ddf0fee3-5659-4923-8d2d-393aa93fe146}" colspan="1" rowspan="1">
                                 <labels>
-                                  <label description="Has distinguishing features?" languagecode="1033" />
+                                  <label description="Has distinguishing features" languagecode="1033" />
                                 </labels>
-                                <control id="cre2c_hasuniquefeatures" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cre2c_hasuniquefeatures" disabled="false" />
+                                <control id="cre2c_hasuniquefeatures" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_hasuniquefeatures" disabled="false" uniqueid="{42dccccc-ea9f-404c-bf85-0a5ceeaafebf}" />
                               </cell>
                             </row>
                             <row>
@@ -5063,19 +5063,19 @@
                           </labels>
                           <rows>
                             <row>
-                              <cell id="{abc61100-1959-4bb6-86b1-b208912a370c}" locklevel="0" colspan="1" rowspan="1">
+                              <cell locklevel="0" id="{301163b8-517b-4d84-9cda-451fc0408d48}" colspan="1" rowspan="1">
                                 <labels>
                                   <label description="Owned by applicant" languagecode="1033" />
                                 </labels>
-                                <control id="cre2c_ownedbyapplicant" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cre2c_ownedbyapplicant" disabled="false" />
+                                <control id="cre2c_ownedbyapplicant" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_ownedbyapplicant" disabled="false" uniqueid="{e595ba08-3b75-42db-b9f2-0b77c99e9034}" />
                               </cell>
                             </row>
                             <row>
-                              <cell id="{696c4f2a-85af-483d-8023-29b09bc3347a}" locklevel="0" colspan="1" rowspan="1">
+                              <cell locklevel="0" id="{e0fce453-8ce6-4f75-90cd-b46e2ef83cbc}" colspan="1" rowspan="1">
                                 <labels>
                                   <label description="Work for a business" languagecode="1033" />
                                 </labels>
-                                <control id="cre2c_workforabusiness" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cre2c_workforabusiness" disabled="false" />
+                                <control id="cre2c_workforabusiness" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_workforabusiness" disabled="false" uniqueid="{1ce37d7a-d630-430e-a14c-067f5d055d52}" />
                               </cell>
                             </row>
                             <row>
@@ -5196,19 +5196,19 @@
                           </labels>
                           <rows>
                             <row>
-                              <cell id="{9160b26d-ccb1-4f17-a6fc-919bf1a0cc46}" locklevel="0" colspan="1" rowspan="1">
+                              <cell locklevel="0" id="{9441373e-9b38-41e0-9ee6-99d793df76a7}" colspan="1" rowspan="1">
                                 <labels>
                                   <label description="Owned by applicant" languagecode="1033" />
                                 </labels>
-                                <control id="cre2c_previousownedbyapplicant" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cre2c_previousownedbyapplicant" disabled="false" />
+                                <control id="cre2c_previousownedbyapplicant" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_previousownedbyapplicant" disabled="false" uniqueid="{852c2c2b-5587-4c31-b6d5-1b976d1c5666}" />
                               </cell>
                             </row>
                             <row>
-                              <cell id="{ccc9068e-a244-436f-bde5-b9763651add5}" locklevel="0" colspan="1" rowspan="1">
+                              <cell locklevel="0" id="{27b83b71-5bad-460c-9250-b393d6ad4b1d}" colspan="1" rowspan="1">
                                 <labels>
                                   <label description="Work for a business" languagecode="1033" />
                                 </labels>
-                                <control id="cre2c_previousworkforabusiness" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cre2c_previousworkforabusiness" disabled="false" />
+                                <control id="cre2c_previousworkforabusiness" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_previousworkforabusiness" disabled="false" uniqueid="{3fd64db8-0bb5-450f-abd6-c1e7c24c5107}" />
                               </cell>
                             </row>
                             <row>
@@ -5329,6 +5329,187 @@
                   </Handlers>
                 </event>
               </events>
+              <controlDescriptions>
+                <controlDescription forControl="{0bfb516e-59c5-4ca1-b9fb-4ffb190cdc97}">
+                  <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
+                    <parameters>
+                      <datafieldname>cre2c_manuallycreated</datafieldname>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_manuallycreated</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_manuallycreated</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_manuallycreated</value>
+                    </parameters>
+                  </customControl>
+                </controlDescription>
+                <controlDescription forControl="{99915944-a2c7-4d19-8378-5aebc50af212}">
+                  <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
+                    <parameters>
+                      <datafieldname>cre2c_groupregistration</datafieldname>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_groupregistration</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_groupregistration</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_groupregistration</value>
+                    </parameters>
+                  </customControl>
+                </controlDescription>
+                <controlDescription forControl="{42dccccc-ea9f-404c-bf85-0a5ceeaafebf}">
+                  <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
+                    <parameters>
+                      <datafieldname>cre2c_hasuniquefeatures</datafieldname>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_hasuniquefeatures</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_hasuniquefeatures</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_hasuniquefeatures</value>
+                    </parameters>
+                  </customControl>
+                </controlDescription>
+                <controlDescription forControl="{e595ba08-3b75-42db-b9f2-0b77c99e9034}">
+                  <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
+                    <parameters>
+                      <datafieldname>cre2c_ownedbyapplicant</datafieldname>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_ownedbyapplicant</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_ownedbyapplicant</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_ownedbyapplicant</value>
+                    </parameters>
+                  </customControl>
+                </controlDescription>
+                <controlDescription forControl="{1ce37d7a-d630-430e-a14c-067f5d055d52}">
+                  <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
+                    <parameters>
+                      <datafieldname>cre2c_workforabusiness</datafieldname>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_workforabusiness</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_workforabusiness</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_workforabusiness</value>
+                    </parameters>
+                  </customControl>
+                </controlDescription>
+                <controlDescription forControl="{3fd64db8-0bb5-450f-abd6-c1e7c24c5107}">
+                  <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
+                    <parameters>
+                      <datafieldname>cre2c_previousworkforabusiness</datafieldname>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_previousworkforabusiness</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_previousworkforabusiness</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_previousworkforabusiness</value>
+                    </parameters>
+                  </customControl>
+                </controlDescription>
+                <controlDescription forControl="{852c2c2b-5587-4c31-b6d5-1b976d1c5666}">
+                  <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
+                    <parameters>
+                      <datafieldname>cre2c_previousownedbyapplicant</datafieldname>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_previousownedbyapplicant</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_previousownedbyapplicant</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_previousownedbyapplicant</value>
+                    </parameters>
+                  </customControl>
+                </controlDescription>
+                <controlDescription forControl="{cd46cb91-79b5-4c49-b8d7-7e386cbd444a}">
+                  <customControl id="{C6D124CA-7EDA-4A60-AEA9-7FB8D318B68F}">
+                    <parameters>
+                      <datafieldname>cre2c_numberofitems</datafieldname>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="1" name="MscrmControls.NumberInput.NumberInputControl">
+                    <parameters>
+                      <value type="Currency">cre2c_numberofitems</value>
+                      <step type="Currency" static="true">1.0000</step>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="2" name="MscrmControls.NumberInput.NumberInputControl">
+                    <parameters>
+                      <value type="Currency">cre2c_numberofitems</value>
+                      <step type="Currency" static="true">1.0000</step>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="0" name="MscrmControls.NumberInput.NumberInputControl">
+                    <parameters>
+                      <value type="Currency">cre2c_numberofitems</value>
+                      <step type="Currency" static="true">1.0000</step>
+                    </parameters>
+                  </customControl>
+                </controlDescription>
+              </controlDescriptions>
             </form>
             <IsCustomizable>1</IsCustomizable>
             <CanBeDeleted>1</CanBeDeleted>
@@ -10059,19 +10240,19 @@
                               </cell>
                             </row>
                             <row>
-                              <cell id="{f2b91cdd-ee22-4433-ae20-281a032e7554}" locklevel="0" colspan="1" rowspan="1">
+                              <cell locklevel="0" id="{f03bda53-c854-4132-97f9-ccdc156b566b}" colspan="1" rowspan="1">
                                 <labels>
                                   <label description="Manually created" languagecode="1033" />
                                 </labels>
-                                <control id="cre2c_manuallycreated" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cre2c_manuallycreated" disabled="true" />
+                                <control id="cre2c_manuallycreated" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_manuallycreated" disabled="true" uniqueid="{2bea9329-316d-45ac-a203-6220043d4dce}" />
                               </cell>
                             </row>
                             <row>
-                              <cell id="{422de28f-530a-40c3-9d1a-6903e7462fd3}" locklevel="0" colspan="1" rowspan="1">
+                              <cell locklevel="0" id="{cbf1d9b4-6a9d-4884-98de-d994f811f8e0}" colspan="1" rowspan="1">
                                 <labels>
                                   <label description="Consent to share information" languagecode="1033" />
                                 </labels>
-                                <control id="cre2c_consenttoshareinformation" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cre2c_consenttoshareinformation" disabled="false" />
+                                <control id="cre2c_consenttoshareinformation" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_consenttoshareinformation" disabled="false" uniqueid="{be452cb1-cf60-4149-8170-fe747e7ca554}" />
                               </cell>
                             </row>
                           </rows>
@@ -10137,11 +10318,11 @@
                               </cell>
                             </row>
                             <row>
-                              <cell id="{00a61bbb-94f3-43a5-8db0-e896da15712c}" locklevel="0" colspan="1" rowspan="1">
+                              <cell locklevel="0" id="{e80d4cae-147c-47c6-8307-b5ea15b063b9}" colspan="1" rowspan="1">
                                 <labels>
                                   <label description="Has applied before" languagecode="1033" />
                                 </labels>
-                                <control id="cre2c_appliedbefore" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cre2c_appliedbefore" disabled="false" />
+                                <control id="cre2c_appliedbefore" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_appliedbefore" disabled="false" uniqueid="{7d82969d-4009-490d-9190-8256ff732f06}" />
                               </cell>
                             </row>
                             <row>
@@ -10214,11 +10395,11 @@
                               </cell>
                             </row>
                             <row>
-                              <cell id="{e5fe8e0c-7440-4e07-8d74-d0a5731c1e92}" locklevel="0" colspan="1" rowspan="1">
+                              <cell locklevel="0" id="{db9f49d7-eb48-4555-bba4-df463e313d1f}" colspan="1" rowspan="1">
                                 <labels>
-                                  <label description="Has distinguishing features?" languagecode="1033" />
+                                  <label description="Has distinguishing features" languagecode="1033" />
                                 </labels>
-                                <control id="cre2c_hasuniquefeatures" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cre2c_hasuniquefeatures" disabled="false" />
+                                <control id="cre2c_hasuniquefeatures" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_hasuniquefeatures" disabled="false" uniqueid="{3cbf323a-ed08-4d0a-8771-628597a00ecb}" />
                               </cell>
                             </row>
                             <row>
@@ -10495,19 +10676,19 @@
                           </labels>
                           <rows>
                             <row>
-                              <cell id="{a4bf955b-703c-4d94-9651-eb162ec663df}" locklevel="0" colspan="1" rowspan="1">
+                              <cell locklevel="0" id="{82de2f08-5069-4e05-a8b4-430caf58daf8}" colspan="1" rowspan="1">
                                 <labels>
                                   <label description="Owned by applicant" languagecode="1033" />
                                 </labels>
-                                <control id="cre2c_ownedbyapplicant" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cre2c_ownedbyapplicant" disabled="false" />
+                                <control id="cre2c_ownedbyapplicant" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_ownedbyapplicant" disabled="false" uniqueid="{a086d8a0-d44e-4fb4-86cf-a43ad5298fef}" />
                               </cell>
                             </row>
                             <row>
-                              <cell id="{3b53d275-b728-4f45-9f05-04e6bb05c75a}" locklevel="0" colspan="1" rowspan="1">
+                              <cell locklevel="0" id="{48b98036-c4ee-43cc-83b6-c4a847f412d7}" colspan="1" rowspan="1">
                                 <labels>
                                   <label description="Work for a business" languagecode="1033" />
                                 </labels>
-                                <control id="cre2c_workforabusiness" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cre2c_workforabusiness" disabled="false" />
+                                <control id="cre2c_workforabusiness" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_workforabusiness" disabled="false" uniqueid="{f7bfe216-f45d-4dee-a5c6-b9dfb1917d18}" />
                               </cell>
                             </row>
                             <row>
@@ -10656,19 +10837,19 @@
                           </labels>
                           <rows>
                             <row>
-                              <cell id="{1bff9717-99e4-4dce-a9e3-4b1502d8224d}" locklevel="0" colspan="1" rowspan="1">
+                              <cell locklevel="0" id="{08e21b03-f429-4599-b209-4a1e7342b206}" colspan="1" rowspan="1">
                                 <labels>
-                                  <label description="Owned by applicant" languagecode="1033" />
+                                  <label description="Previous owned by applicant" languagecode="1033" />
                                 </labels>
-                                <control id="cre2c_previousownedbyapplicant" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cre2c_previousownedbyapplicant" disabled="false" />
+                                <control id="cre2c_previousownedbyapplicant" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_previousownedbyapplicant" disabled="false" uniqueid="{e96393a7-8d90-4c14-8a27-709a5db1c27d}" />
                               </cell>
                             </row>
                             <row>
-                              <cell id="{1182d5dc-af0c-4a09-a06c-81498107bb0f}" locklevel="0" colspan="1" rowspan="1">
+                              <cell locklevel="0" id="{4725e3b3-07c2-4849-9985-31f9eeb846e3}" colspan="1" rowspan="1">
                                 <labels>
-                                  <label description="Work for a business" languagecode="1033" />
+                                  <label description="Previous work for a business" languagecode="1033" />
                                 </labels>
-                                <control id="cre2c_previousworkforabusiness" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cre2c_previousworkforabusiness" disabled="false" />
+                                <control id="cre2c_previousworkforabusiness" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_previousworkforabusiness" disabled="false" uniqueid="{fc42b22c-a067-4015-ba61-d42d64bc610f}" />
                               </cell>
                             </row>
                             <row>
@@ -10987,11 +11168,6 @@
                     <Handler functionName="alreadyHasCertificateOnChange" libraryName="cre2c_IvoryServiceScript" handlerUniqueId="{6f28bfe8-9e62-43b9-ba85-b5253f7c52a9}" enabled="true" parameters="" passExecutionContext="true" />
                   </Handlers>
                 </event>
-                <event name="onchange" application="true" active="true" attribute="cre2c_appliedbefore">
-                  <Handlers>
-                    <Handler functionName="appliedBeforeOnChange" libraryName="cre2c_IvoryServiceScript" handlerUniqueId="{4b00740a-682a-463c-a120-701e5cd79492}" enabled="true" parameters="" passExecutionContext="true" />
-                  </Handlers>
-                </event>
                 <event name="onchange" application="true" active="true" attribute="cre2c_datedetailssenttopi">
                   <Handlers>
                     <Handler functionName="applicationSentToPiOnChange" libraryName="cre2c_IvoryServiceScript" handlerUniqueId="{f5c5bf1b-e4a7-4baa-a907-e84cdf90707b}" enabled="true" parameters="" passExecutionContext="true" />
@@ -11013,7 +11189,184 @@
                   </Handlers>
                 </event>
               </events>
-              <controlDescriptions />
+              <controlDescriptions>
+                <controlDescription forControl="{2bea9329-316d-45ac-a203-6220043d4dce}">
+                  <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
+                    <parameters>
+                      <datafieldname>cre2c_manuallycreated</datafieldname>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_manuallycreated</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_manuallycreated</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_manuallycreated</value>
+                    </parameters>
+                  </customControl>
+                </controlDescription>
+                <controlDescription forControl="{be452cb1-cf60-4149-8170-fe747e7ca554}">
+                  <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
+                    <parameters>
+                      <datafieldname>cre2c_consenttoshareinformation</datafieldname>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_consenttoshareinformation</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_consenttoshareinformation</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_consenttoshareinformation</value>
+                    </parameters>
+                  </customControl>
+                </controlDescription>
+                <controlDescription forControl="{7d82969d-4009-490d-9190-8256ff732f06}">
+                  <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
+                    <parameters>
+                      <datafieldname>cre2c_appliedbefore</datafieldname>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_appliedbefore</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_appliedbefore</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_appliedbefore</value>
+                    </parameters>
+                  </customControl>
+                </controlDescription>
+                <controlDescription forControl="{3cbf323a-ed08-4d0a-8771-628597a00ecb}">
+                  <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
+                    <parameters>
+                      <datafieldname>cre2c_hasuniquefeatures</datafieldname>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_hasuniquefeatures</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_hasuniquefeatures</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_hasuniquefeatures</value>
+                    </parameters>
+                  </customControl>
+                </controlDescription>
+                <controlDescription forControl="{a086d8a0-d44e-4fb4-86cf-a43ad5298fef}">
+                  <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
+                    <parameters>
+                      <datafieldname>cre2c_ownedbyapplicant</datafieldname>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_ownedbyapplicant</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_ownedbyapplicant</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_ownedbyapplicant</value>
+                    </parameters>
+                  </customControl>
+                </controlDescription>
+                <controlDescription forControl="{f7bfe216-f45d-4dee-a5c6-b9dfb1917d18}">
+                  <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
+                    <parameters>
+                      <datafieldname>cre2c_workforabusiness</datafieldname>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_workforabusiness</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_workforabusiness</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_workforabusiness</value>
+                    </parameters>
+                  </customControl>
+                </controlDescription>
+                <controlDescription forControl="{e96393a7-8d90-4c14-8a27-709a5db1c27d}">
+                  <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
+                    <parameters>
+                      <datafieldname>cre2c_previousownedbyapplicant</datafieldname>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_previousownedbyapplicant</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_previousownedbyapplicant</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_previousownedbyapplicant</value>
+                    </parameters>
+                  </customControl>
+                </controlDescription>
+                <controlDescription forControl="{fc42b22c-a067-4015-ba61-d42d64bc610f}">
+                  <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
+                    <parameters>
+                      <datafieldname>cre2c_previousworkforabusiness</datafieldname>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_previousworkforabusiness</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_previousworkforabusiness</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_previousworkforabusiness</value>
+                    </parameters>
+                  </customControl>
+                </controlDescription>
+              </controlDescriptions>
             </form>
             <IsCustomizable>1</IsCustomizable>
             <CanBeDeleted>1</CanBeDeleted>
@@ -12473,6 +12826,35 @@
       </LocalizedNames>
       <Descriptions>
         <Description languagecode="1033" description="Automatically set a Section 2 case to Inactive when the status changes to one of a list of possible statuses" />
+      </Descriptions>
+    </Workflow>
+    <Workflow WorkflowId="{fab9c140-5e99-ec11-b400-0022483f7e2c}" Name="Has applied before" Description="Click to add description">
+      <XamlFileName>/Workflows/Hasappliedbefore-FAB9C140-5E99-EC11-B400-0022483F7E2C.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>2</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.60</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ProcessTriggerScope>2</ProcessTriggerScope>
+      <PrimaryEntity>cre2c_IvorySection2Case</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1033" description="Has applied before" />
+      </LocalizedNames>
+      <Descriptions>
+        <Description languagecode="1033" description="Click to add description" />
       </Descriptions>
     </Workflow>
     <Workflow WorkflowId="{b9f0bc01-29e6-eb11-bacb-0022483f985c}" Name="Ivory Section 10 Case - set to Inactive" Description="Automatically set a Section 10 case to Inactive when the status changes to one of a list of possible statuses">

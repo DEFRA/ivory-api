@@ -92,20 +92,20 @@
                     <Sequence DisplayName="SetVisibilityStep1: Hide item count">
                       <mcwc:SetVisibility ControlId="cre2c_numberofitems" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="cre2c_ivorysection10case" IsVisible="False" />
                     </Sequence>
-                    <Sequence DisplayName="SetAttributeValueStep_SetVisibilityStep1_4: Set item count">
+                    <Sequence DisplayName="SetAttributeValueStep4539: Set item count">
                       <Sequence.Variables>
-                        <Variable x:TypeArguments="x:Object" Name="SetAttributeValueStep_SetVisibilityStep1_4_1" />
+                        <Variable x:TypeArguments="x:Object" Name="SetAttributeValueStep4539_1" />
                       </Sequence.Variables>
                       <Assign x:TypeArguments="mxs:Entity" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" Value="[New Entity(&quot;cre2c_ivorysection10case&quot;)]" />
                       <Assign x:TypeArguments="s:Guid" To="[CreatedEntities(&quot;primaryEntity#Temp&quot;).Id]" Value="[InputEntities(&quot;primaryEntity&quot;).Id]" />
-                      <mxswa:SetEntityProperty Attribute="cre2c_numberofitems" Entity="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" EntityName="cre2c_ivorysection10case" Value="[SetAttributeValueStep_SetVisibilityStep1_4_1]">
+                      <mxswa:SetEntityProperty Attribute="cre2c_numberofitems" Entity="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" EntityName="cre2c_ivorysection10case" Value="[SetAttributeValueStep4539_1]">
                         <mxswa:SetEntityProperty.TargetType>
                           <InArgument x:TypeArguments="s:Type">
                             <mxswa:ReferenceLiteral x:TypeArguments="s:Type" Value="x:Int32" />
                           </InArgument>
                         </mxswa:SetEntityProperty.TargetType>
                       </mxswa:SetEntityProperty>
-                      <mcwc:SetAttributeValue DisplayName="SetAttributeValueStep_SetVisibilityStep1_4" Entity="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" EntityName="cre2c_ivorysection10case" />
+                      <mcwc:SetAttributeValue DisplayName="SetAttributeValueStep4539" Entity="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" EntityName="cre2c_ivorysection10case" />
                       <Assign x:TypeArguments="mxs:Entity" To="[InputEntities(&quot;primaryEntity&quot;)]" Value="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" />
                     </Sequence>
                   </sco:Collection>
