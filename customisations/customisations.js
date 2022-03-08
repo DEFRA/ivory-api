@@ -467,7 +467,7 @@ this.exemptionTypeOnChange = executionContext => {
     case ExemptionTypeLookup.MINIATURE:
       formContext.getControl(DataVerseFieldName.WHY_IVORY_INTEGRAL).setVisible(false);
       formContext.getControl(DataVerseFieldName.WHY_AGE_EXEMPT).setVisible(true);
-      formContext.getControl(DataVerseFieldName.WHY_IVORY_EXEMPT).setVisible(true);
+      formContext.getControl(DataVerseFieldName.WHY_IVORY_EXEMPT).setVisible(false);
 
       formContext.getAttribute(DataVerseFieldName.WHY_IVORY_INTEGRAL).setValue(null);
       break;
