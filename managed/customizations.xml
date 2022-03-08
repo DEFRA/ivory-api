@@ -3341,6 +3341,45 @@
                 <Description description="" languagecode="1033" />
               </Descriptions>
             </attribute>
+            <attribute PhysicalName="cre2c_species">
+              <Type>picklist</Type>
+              <Name>cre2c_species</Name>
+              <LogicalName>cre2c_species</LogicalName>
+              <RequiredLevel>required</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0.0.65</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <AppDefaultValue>881990000</AppDefaultValue>
+              <OptionSetName>cre2c_species</OptionSetName>
+              <displaynames>
+                <displayname description="Species" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="" languagecode="1033" />
+              </Descriptions>
+            </attribute>
             <attribute PhysicalName="cre2c_Status">
               <Type>picklist</Type>
               <Name>cre2c_status</Name>
@@ -4824,6 +4863,14 @@
                               </cell>
                             </row>
                             <row>
+                              <cell id="{21bad289-d261-4aad-b4fa-f1ff3cefbbb3}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Species" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_species" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cre2c_species" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
                               <cell id="{87257a2a-d936-4cad-b3a0-7db0e0945171}" locklevel="0">
                                 <labels>
                                   <label description="Item summary" languagecode="1033" />
@@ -5067,7 +5114,7 @@
                                 <labels>
                                   <label description="Owned by applicant" languagecode="1033" />
                                 </labels>
-                                <control id="cre2c_ownedbyapplicant" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_ownedbyapplicant" disabled="false" uniqueid="{e595ba08-3b75-42db-b9f2-0b77c99e9034}" />
+                                <control id="cre2c_ownedbyapplicant" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cre2c_ownedbyapplicant" disabled="false" />
                               </cell>
                             </row>
                             <row>
@@ -5200,7 +5247,7 @@
                                 <labels>
                                   <label description="Owned by applicant" languagecode="1033" />
                                 </labels>
-                                <control id="cre2c_previousownedbyapplicant" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_previousownedbyapplicant" disabled="false" uniqueid="{852c2c2b-5587-4c31-b6d5-1b976d1c5666}" />
+                                <control id="cre2c_previousownedbyapplicant" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cre2c_previousownedbyapplicant" disabled="false" />
                               </cell>
                             </row>
                             <row>
@@ -5396,28 +5443,6 @@
                     </parameters>
                   </customControl>
                 </controlDescription>
-                <controlDescription forControl="{e595ba08-3b75-42db-b9f2-0b77c99e9034}">
-                  <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
-                    <parameters>
-                      <datafieldname>cre2c_ownedbyapplicant</datafieldname>
-                    </parameters>
-                  </customControl>
-                  <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
-                    <parameters>
-                      <value type="TwoOptions">cre2c_ownedbyapplicant</value>
-                    </parameters>
-                  </customControl>
-                  <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
-                    <parameters>
-                      <value type="TwoOptions">cre2c_ownedbyapplicant</value>
-                    </parameters>
-                  </customControl>
-                  <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
-                    <parameters>
-                      <value type="TwoOptions">cre2c_ownedbyapplicant</value>
-                    </parameters>
-                  </customControl>
-                </controlDescription>
                 <controlDescription forControl="{1ce37d7a-d630-430e-a14c-067f5d055d52}">
                   <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
                     <parameters>
@@ -5459,28 +5484,6 @@
                   <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
                     <parameters>
                       <value type="TwoOptions">cre2c_previousworkforabusiness</value>
-                    </parameters>
-                  </customControl>
-                </controlDescription>
-                <controlDescription forControl="{852c2c2b-5587-4c31-b6d5-1b976d1c5666}">
-                  <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
-                    <parameters>
-                      <datafieldname>cre2c_previousownedbyapplicant</datafieldname>
-                    </parameters>
-                  </customControl>
-                  <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
-                    <parameters>
-                      <value type="TwoOptions">cre2c_previousownedbyapplicant</value>
-                    </parameters>
-                  </customControl>
-                  <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
-                    <parameters>
-                      <value type="TwoOptions">cre2c_previousownedbyapplicant</value>
-                    </parameters>
-                  </customControl>
-                  <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
-                    <parameters>
-                      <value type="TwoOptions">cre2c_previousownedbyapplicant</value>
                     </parameters>
                   </customControl>
                 </controlDescription>
@@ -7324,7 +7327,7 @@
               <Type>bit</Type>
               <Name>cre2c_ownedbyapplicant</Name>
               <LogicalName>cre2c_ownedbyapplicant</LogicalName>
-              <RequiredLevel>required</RequiredLevel>
+              <RequiredLevel>recommended</RequiredLevel>
               <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
               <ImeMode>auto</ImeMode>
               <ValidForUpdateApi>1</ValidForUpdateApi>
@@ -8228,7 +8231,7 @@
               <Type>bit</Type>
               <Name>cre2c_previousownedbyapplicant</Name>
               <LogicalName>cre2c_previousownedbyapplicant</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
+              <RequiredLevel>recommended</RequiredLevel>
               <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
               <ImeMode>auto</ImeMode>
               <ValidForUpdateApi>1</ValidForUpdateApi>
@@ -8618,6 +8621,45 @@
               <OptionSetName>cre2c_sellingonbehalfof</OptionSetName>
               <displaynames>
                 <displayname description="Selling on behalf of" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="cre2c_species">
+              <Type>picklist</Type>
+              <Name>cre2c_species</Name>
+              <LogicalName>cre2c_species</LogicalName>
+              <RequiredLevel>required</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0.0.65</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <AppDefaultValue>881990000</AppDefaultValue>
+              <OptionSetName>cre2c_species</OptionSetName>
+              <displaynames>
+                <displayname description="Species" languagecode="1033" />
               </displaynames>
               <Descriptions>
                 <Description description="" languagecode="1033" />
@@ -10379,6 +10421,14 @@
                               </cell>
                             </row>
                             <row>
+                              <cell id="{e67c74f3-c10f-4dc2-abe9-428274d4060e}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Species" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_species" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cre2c_species" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
                               <cell id="{1be2874a-8624-4e11-8e67-dbbf9caa04d9}" locklevel="0">
                                 <labels>
                                   <label description="Item summary" languagecode="1033" />
@@ -10680,7 +10730,7 @@
                                 <labels>
                                   <label description="Owned by applicant" languagecode="1033" />
                                 </labels>
-                                <control id="cre2c_ownedbyapplicant" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_ownedbyapplicant" disabled="false" uniqueid="{a086d8a0-d44e-4fb4-86cf-a43ad5298fef}" />
+                                <control id="cre2c_ownedbyapplicant" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cre2c_ownedbyapplicant" disabled="false" />
                               </cell>
                             </row>
                             <row>
@@ -10841,7 +10891,7 @@
                                 <labels>
                                   <label description="Previous owned by applicant" languagecode="1033" />
                                 </labels>
-                                <control id="cre2c_previousownedbyapplicant" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_previousownedbyapplicant" disabled="false" uniqueid="{e96393a7-8d90-4c14-8a27-709a5db1c27d}" />
+                                <control id="cre2c_previousownedbyapplicant" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cre2c_previousownedbyapplicant" disabled="false" />
                               </cell>
                             </row>
                             <row>
@@ -11278,28 +11328,6 @@
                     </parameters>
                   </customControl>
                 </controlDescription>
-                <controlDescription forControl="{a086d8a0-d44e-4fb4-86cf-a43ad5298fef}">
-                  <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
-                    <parameters>
-                      <datafieldname>cre2c_ownedbyapplicant</datafieldname>
-                    </parameters>
-                  </customControl>
-                  <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
-                    <parameters>
-                      <value type="TwoOptions">cre2c_ownedbyapplicant</value>
-                    </parameters>
-                  </customControl>
-                  <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
-                    <parameters>
-                      <value type="TwoOptions">cre2c_ownedbyapplicant</value>
-                    </parameters>
-                  </customControl>
-                  <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
-                    <parameters>
-                      <value type="TwoOptions">cre2c_ownedbyapplicant</value>
-                    </parameters>
-                  </customControl>
-                </controlDescription>
                 <controlDescription forControl="{f7bfe216-f45d-4dee-a5c6-b9dfb1917d18}">
                   <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
                     <parameters>
@@ -11319,28 +11347,6 @@
                   <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
                     <parameters>
                       <value type="TwoOptions">cre2c_workforabusiness</value>
-                    </parameters>
-                  </customControl>
-                </controlDescription>
-                <controlDescription forControl="{e96393a7-8d90-4c14-8a27-709a5db1c27d}">
-                  <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
-                    <parameters>
-                      <datafieldname>cre2c_previousownedbyapplicant</datafieldname>
-                    </parameters>
-                  </customControl>
-                  <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
-                    <parameters>
-                      <value type="TwoOptions">cre2c_previousownedbyapplicant</value>
-                    </parameters>
-                  </customControl>
-                  <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
-                    <parameters>
-                      <value type="TwoOptions">cre2c_previousownedbyapplicant</value>
-                    </parameters>
-                  </customControl>
-                  <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
-                    <parameters>
-                      <value type="TwoOptions">cre2c_previousownedbyapplicant</value>
                     </parameters>
                   </customControl>
                 </controlDescription>
@@ -12228,7 +12234,7 @@
         <RolePrivilege name="prvReadWebWizard" level="Global" />
         <RolePrivilege name="prvReadWizardAccessPrivilege" level="Global" />
         <RolePrivilege name="prvReadWizardPage" level="Global" />
-        <RolePrivilege name="prvReadWorkflow" level="Basic" />
+        <RolePrivilege name="prvReadWorkflow" level="Global" />
         <RolePrivilege name="prvReadworkflowbinary" level="Basic" />
         <RolePrivilege name="prvReadWorkflowSession" level="Global" />
         <RolePrivilege name="prvSearchAvailability" level="Global" />
@@ -12676,7 +12682,7 @@
         <RolePrivilege name="prvReadWebWizard" level="Global" />
         <RolePrivilege name="prvReadWizardAccessPrivilege" level="Global" />
         <RolePrivilege name="prvReadWizardPage" level="Global" />
-        <RolePrivilege name="prvReadWorkflow" level="Basic" />
+        <RolePrivilege name="prvReadWorkflow" level="Global" />
         <RolePrivilege name="prvReadworkflowbinary" level="Basic" />
         <RolePrivilege name="prvReadWorkflowSession" level="Global" />
         <RolePrivilege name="prvSearchAvailability" level="Global" />
@@ -14303,6 +14309,47 @@
         <option value="881990005">
           <labels>
             <label description="Other" languagecode="1033" />
+          </labels>
+        </option>
+      </options>
+    </optionset>
+    <optionset Name="cre2c_species" localizedName="Species">
+      <OptionSetType>picklist</OptionSetType>
+      <IsGlobal>1</IsGlobal>
+      <IntroducedVersion>1.0.0.64</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <displaynames>
+        <displayname description="Species" languagecode="1033" />
+      </displaynames>
+      <options>
+        <option value="881990000" ExternalValue="">
+          <labels>
+            <label description="Elephant" languagecode="1033" />
+          </labels>
+        </option>
+        <option value="881990001" ExternalValue="">
+          <labels>
+            <label description="Hippopotamus" languagecode="1033" />
+          </labels>
+        </option>
+        <option value="881990002" ExternalValue="">
+          <labels>
+            <label description="Killer whale" languagecode="1033" />
+          </labels>
+        </option>
+        <option value="881990003" ExternalValue="">
+          <labels>
+            <label description="Narwhal" languagecode="1033" />
+          </labels>
+        </option>
+        <option value="881990004" ExternalValue="">
+          <labels>
+            <label description="Sperm whale" languagecode="1033" />
+          </labels>
+        </option>
+        <option value="881990005" ExternalValue="">
+          <labels>
+            <label description="Walrus" languagecode="1033" />
           </labels>
         </option>
       </options>

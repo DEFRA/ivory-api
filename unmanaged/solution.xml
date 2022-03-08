@@ -5,7 +5,7 @@
       <LocalizedName description="Ivory Service" languagecode="1033" />
     </LocalizedNames>
     <Descriptions />
-    <Version>1.0.0.64</Version>
+    <Version>1.0.0.65</Version>
     <Managed>0</Managed>
     <Publisher>
       <UniqueName>Crbc637</UniqueName>
@@ -88,6 +88,7 @@
       <RootComponent type="9" schemaName="cre2c_ivoryvolumereason" behavior="0" />
       <RootComponent type="9" schemaName="cre2c_recommendation" behavior="0" />
       <RootComponent type="9" schemaName="cre2c_sellingonbehalfof" behavior="0" />
+      <RootComponent type="9" schemaName="cre2c_species" behavior="0" />
       <RootComponent type="9" schemaName="cre2c_status" behavior="0" />
       <RootComponent type="9" schemaName="cre2c_whyivoryintegral" behavior="0" />
       <RootComponent type="20" id="{5bca7c3f-7377-ec11-8d21-000d3ad5f0e3}" behavior="0" />

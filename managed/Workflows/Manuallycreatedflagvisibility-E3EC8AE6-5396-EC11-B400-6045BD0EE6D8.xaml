@@ -60,7 +60,7 @@
                 <mxswa:ActivityReference.Properties>
                   <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
                   <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
-                    <Sequence DisplayName="SetVisibilityStep_ConditionBranchStep2_2: Show Manually created flag">
+                    <Sequence DisplayName="SetVisibilityStep2: Show Manually created flag">
                       <mcwc:SetVisibility ControlId="cre2c_manuallycreated" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="cre2c_ivorysection10case" IsVisible="True" />
                     </Sequence>
                   </sco:Collection>
