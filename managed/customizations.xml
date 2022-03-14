@@ -11111,7 +11111,7 @@
                             </row>
                           </rows>
                         </section>
-                        <section name="The submission_section_6" id="eba09c1c-74f4-47b9-9737-588ae6987927" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                        <section name="owner_section" id="eba09c1c-74f4-47b9-9737-588ae6987927" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
                           <labels>
                             <label description="Owner" languagecode="1033" />
                           </labels>

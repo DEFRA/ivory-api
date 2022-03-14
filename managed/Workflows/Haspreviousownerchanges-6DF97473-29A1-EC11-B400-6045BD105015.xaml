@@ -63,16 +63,16 @@
                     <Sequence DisplayName="SetVisibilityStep2: Show previous owned by applicant">
                       <mcwc:SetVisibility ControlId="cre2c_previousownedbyapplicant" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="cre2c_ivorysection2case" IsVisible="True" />
                     </Sequence>
-                    <Sequence DisplayName="SetVisibilityStep_SetVisibilityStep2_14: Show applicant name">
+                    <Sequence DisplayName="SetVisibilityStep14: Show applicant name">
                       <mcwc:SetVisibility ControlId="cre2c_applicantname" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="cre2c_ivorysection2case" IsVisible="True" />
                     </Sequence>
-                    <Sequence DisplayName="SetVisibilityStep_SetVisibilityStep2_14_15: Show applicant email">
+                    <Sequence DisplayName="SetVisibilityStep15: Show applicant email">
                       <mcwc:SetVisibility ControlId="cre2c_applicantemail" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="cre2c_ivorysection2case" IsVisible="True" />
                     </Sequence>
-                    <Sequence DisplayName="SetVisibilityStep_SetVisibilityStep2_14_15_16: Show applicant address">
+                    <Sequence DisplayName="SetVisibilityStep16: Show applicant address">
                       <mcwc:SetVisibility ControlId="cre2c_applicantaddress" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="cre2c_ivorysection2case" IsVisible="True" />
                     </Sequence>
-                    <Sequence DisplayName="SetVisibilityStep_SetVisibilityStep2_14_15_16_17: Show applicant postcode">
+                    <Sequence DisplayName="SetVisibilityStep17: Show applicant postcode">
                       <mcwc:SetVisibility ControlId="cre2c_applicantpostcode" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="cre2c_ivorysection2case" IsVisible="True" />
                     </Sequence>
                   </sco:Collection>
@@ -235,17 +235,17 @@
                       <mcwc:SetAttributeValue DisplayName="SetAttributeValueStep13" Entity="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" EntityName="cre2c_ivorysection2case" />
                       <Assign x:TypeArguments="mxs:Entity" To="[InputEntities(&quot;primaryEntity&quot;)]" Value="[CreatedEntities(&quot;primaryEntity#Temp&quot;)]" />
                     </Sequence>
-                    <Sequence DisplayName="SetVisibilityStep_SetAttributeValueStep13_18: Hide applicant name">
-                      <mcwc:SetVisibility ControlId="cre2c_applicantname" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="cre2c_ivorysection2case" IsVisible="False" />
+                    <Sequence DisplayName="SetVisibilityStep18: Hide previous applicant name">
+                      <mcwc:SetVisibility ControlId="cre2c_previousapplicantname" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="cre2c_ivorysection2case" IsVisible="True" />
                     </Sequence>
-                    <Sequence DisplayName="SetVisibilityStep_SetAttributeValueStep13_18_19: Hide applicant email">
-                      <mcwc:SetVisibility ControlId="cre2c_applicantemail" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="cre2c_ivorysection2case" IsVisible="False" />
+                    <Sequence DisplayName="SetVisibilityStep19: Hide previous applicant email">
+                      <mcwc:SetVisibility ControlId="cre2c_previousapplicantemail" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="cre2c_ivorysection2case" IsVisible="True" />
                     </Sequence>
-                    <Sequence DisplayName="SetVisibilityStep_SetAttributeValueStep13_18_19_20: Hide applicant address">
-                      <mcwc:SetVisibility ControlId="cre2c_applicantaddress" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="cre2c_ivorysection2case" IsVisible="False" />
+                    <Sequence DisplayName="SetVisibilityStep20: Hide previous applicant address">
+                      <mcwc:SetVisibility ControlId="cre2c_previousapplicantaddress" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="cre2c_ivorysection2case" IsVisible="True" />
                     </Sequence>
-                    <Sequence DisplayName="SetVisibilityStep_SetAttributeValueStep13_18_19_20_21: Hide applicant postcode">
-                      <mcwc:SetVisibility ControlId="cre2c_applicantpostcode" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="cre2c_ivorysection2case" IsVisible="False" />
+                    <Sequence DisplayName="SetVisibilityStep21: Hide previous applicant postcode">
+                      <mcwc:SetVisibility ControlId="cre2c_previousapplicantpostcode" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="cre2c_ivorysection2case" IsVisible="True" />
                     </Sequence>
                   </sco:Collection>
                 </mxswa:ActivityReference.Properties>

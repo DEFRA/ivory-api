@@ -600,6 +600,7 @@ this.hasPreviousOwnerOnChange = executionContext => {
   previousApplicantSection.setVisible(hasPreviousOwner);
   previousOwnerSection.setVisible(hasPreviousOwner);
 
+  // sectionObj.setVisible(false); //to hide
 }
 
 this.setStatuses = (formContext, isSection2) => {
