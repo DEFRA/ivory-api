@@ -1621,6 +1621,46 @@
                 <Description description="" languagecode="1033" />
               </Descriptions>
             </attribute>
+            <attribute PhysicalName="cre2c_applicantbusinessname">
+              <Type>nvarchar</Type>
+              <Name>cre2c_applicantbusinessname</Name>
+              <LogicalName>cre2c_applicantbusinessname</LogicalName>
+              <RequiredLevel>required</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0.0.67</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format>text</Format>
+              <MaxLength>4000</MaxLength>
+              <Length>8000</Length>
+              <displaynames>
+                <displayname description="Applicant business name" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="" languagecode="1033" />
+              </Descriptions>
+            </attribute>
             <attribute PhysicalName="cre2c_ApplicantEmail">
               <Type>nvarchar</Type>
               <Name>cre2c_applicantemail</Name>
@@ -1955,6 +1995,67 @@
               </optionset>
               <displaynames>
                 <displayname description="Group registration" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="cre2c_haspreviousowner">
+              <Type>bit</Type>
+              <Name>cre2c_haspreviousowner</Name>
+              <LogicalName>cre2c_haspreviousowner</LogicalName>
+              <RequiredLevel>required</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0.0.67</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <AppDefaultValue>0</AppDefaultValue>
+              <optionset Name="cre2c_cre2c_ivorysection10case_haspreviousowner">
+                <OptionSetType>bit</OptionSetType>
+                <IntroducedVersion>1.0.0.67</IntroducedVersion>
+                <IsCustomizable>1</IsCustomizable>
+                <displaynames>
+                  <displayname description="Local Enumeration" languagecode="1033" />
+                </displaynames>
+                <Descriptions>
+                  <Description description="" languagecode="1033" />
+                </Descriptions>
+                <options>
+                  <option value="1" ExternalValue="">
+                    <labels>
+                      <label description="Yes" languagecode="1033" />
+                    </labels>
+                  </option>
+                  <option value="0" ExternalValue="">
+                    <labels>
+                      <label description="No" languagecode="1033" />
+                    </labels>
+                  </option>
+                </options>
+              </optionset>
+              <displaynames>
+                <displayname description="Has previous owner" languagecode="1033" />
               </displaynames>
               <Descriptions>
                 <Description description="" languagecode="1033" />
@@ -2783,6 +2884,46 @@
                 <Description description="" languagecode="1033" />
               </Descriptions>
             </attribute>
+            <attribute PhysicalName="cre2c_previousapplicantbusinessname">
+              <Type>nvarchar</Type>
+              <Name>cre2c_previousapplicantbusinessname</Name>
+              <LogicalName>cre2c_previousapplicantbusinessname</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0.0.67</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format>text</Format>
+              <MaxLength>4000</MaxLength>
+              <Length>8000</Length>
+              <displaynames>
+                <displayname description="Previous applicant business name" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="" languagecode="1033" />
+              </Descriptions>
+            </attribute>
             <attribute PhysicalName="cre2c_previousapplicantemail">
               <Type>nvarchar</Type>
               <Name>cre2c_previousapplicantemail</Name>
@@ -2986,7 +3127,7 @@
               <Type>bit</Type>
               <Name>cre2c_previousownedbyapplicant</Name>
               <LogicalName>cre2c_previousownedbyapplicant</LogicalName>
-              <RequiredLevel>none</RequiredLevel>
+              <RequiredLevel>required</RequiredLevel>
               <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
               <ImeMode>auto</ImeMode>
               <ValidForUpdateApi>1</ValidForUpdateApi>
@@ -4711,7 +4852,7 @@
             <FormActivationState>1</FormActivationState>
             <form headerdensity="HighWithControls">
               <tabs>
-                <tab name="The submission" id="b0d878cd-1ab8-412f-b8be-e50de977aa7b" IsUserDefined="0" locklevel="0" showlabel="true">
+                <tab name="submission_tab" id="b0d878cd-1ab8-412f-b8be-e50de977aa7b" IsUserDefined="0" locklevel="0" showlabel="true">
                   <labels>
                     <label description="The submission" languagecode="1033" />
                   </labels>
@@ -4842,7 +4983,7 @@
                     </column>
                   </columns>
                 </tab>
-                <tab name="The item" id="29cae935-2b9c-4a8d-b0c6-a56897a20215" IsUserDefined="0" locklevel="0" showlabel="true">
+                <tab name="item_tab" id="29cae935-2b9c-4a8d-b0c6-a56897a20215" IsUserDefined="0" locklevel="0" showlabel="true">
                   <labels>
                     <label description="The item" languagecode="1033" />
                   </labels>
@@ -5015,14 +5156,110 @@
                     </column>
                   </columns>
                 </tab>
-                <tab name="tab_3" id="0d628a27-9619-4f70-bb13-fbdb517e4c9d" IsUserDefined="0" locklevel="0" showlabel="true">
+                <tab name="ownership_tab" id="0d628a27-9619-4f70-bb13-fbdb517e4c9d" IsUserDefined="0" locklevel="0" showlabel="true">
                   <labels>
                     <label description="Ownership" languagecode="1033" />
                   </labels>
                   <columns>
                     <column width="50%">
                       <sections>
-                        <section name="Owner details" id="845c0a39-e8fc-40e3-a221-3d2c799f9df1" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                        <section name="third_party_section" id="751f4b23-4efb-4523-91a6-a1c074e29913" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                          <labels>
+                            <label description="Third party ownership" languagecode="1033" />
+                          </labels>
+                          <rows>
+                            <row>
+                              <cell locklevel="0" id="{a51c5284-555d-49af-8249-eec3f245cade}" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Owned by applicant" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_ownedbyapplicant" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_ownedbyapplicant" disabled="false" uniqueid="{00a736e9-74b8-4fb3-b7e8-fbc59b6725e1}" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell locklevel="0" id="{e0fce453-8ce6-4f75-90cd-b46e2ef83cbc}" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Work for a business" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_workforabusiness" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_workforabusiness" disabled="false" uniqueid="{1ce37d7a-d630-430e-a14c-067f5d055d52}" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{eeff996a-f53d-4e1b-a3e6-c3f42f6415fe}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Selling on behalf of" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_sellingonbehalfof" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cre2c_sellingonbehalfof" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{cc76e80b-04bb-41b8-8e10-af20f46e2974}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Capacity" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_capacity" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cre2c_capacity" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{f25bc889-d517-44c0-9122-ecb3da490ee0}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Capacity - other" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_capacityother" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_capacityother" disabled="false" />
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
+                        <section name="applicant_section" id="f747df86-dd82-43b0-8f2e-f7c288478761" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                          <labels>
+                            <label description="Applicant" languagecode="1033" />
+                          </labels>
+                          <rows>
+                            <row>
+                              <cell id="{2618e00c-6ecd-4896-abb6-8b2b24670e16}" locklevel="0">
+                                <labels>
+                                  <label description="Applicant name" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_applicantname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_applicantname" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{1a11112e-24e2-44a2-b83c-58f6c2fbeb4c}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Applicant business name" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_applicantbusinessname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_applicantbusinessname" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{a66ac929-97a7-4743-80ac-822d6e5e5d8a}" locklevel="0">
+                                <labels>
+                                  <label description="Applicant email" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_applicantemail" classid="{ADA2203E-B4CD-49BE-9DDF-234642B43B52}" datafieldname="cre2c_applicantemail" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{1e04aad8-29ad-45f6-a6c2-d8e92b1bb1da}" locklevel="0" rowspan="3">
+                                <labels>
+                                  <label description="Applicant address" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_applicantaddress" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cre2c_applicantaddress" disabled="false" />
+                              </cell>
+                            </row>
+                            <row />
+                            <row />
+                            <row>
+                              <cell id="{330d6041-8316-4e99-af72-52b5ef3d5077}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Applicant postcode" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_applicantpostcode" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_applicantpostcode" disabled="false" />
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
+                        <section name="owner_section" id="845c0a39-e8fc-40e3-a221-3d2c799f9df1" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
                           <labels>
                             <label description="Owner" languagecode="1033" />
                           </labels>
@@ -5063,99 +5300,115 @@
                             </row>
                           </rows>
                         </section>
-                        <section name="Applicant details" id="f747df86-dd82-43b0-8f2e-f7c288478761" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
-                          <labels>
-                            <label description="Applicant" languagecode="1033" />
-                          </labels>
-                          <rows>
-                            <row>
-                              <cell id="{2618e00c-6ecd-4896-abb6-8b2b24670e16}" locklevel="0">
-                                <labels>
-                                  <label description="Applicant name" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_applicantname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_applicantname" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{a66ac929-97a7-4743-80ac-822d6e5e5d8a}" locklevel="0">
-                                <labels>
-                                  <label description="Applicant email" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_applicantemail" classid="{ADA2203E-B4CD-49BE-9DDF-234642B43B52}" datafieldname="cre2c_applicantemail" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{1e04aad8-29ad-45f6-a6c2-d8e92b1bb1da}" locklevel="0" rowspan="3">
-                                <labels>
-                                  <label description="Applicant address" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_applicantaddress" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cre2c_applicantaddress" disabled="false" />
-                              </cell>
-                            </row>
-                            <row />
-                            <row />
-                            <row>
-                              <cell id="{330d6041-8316-4e99-af72-52b5ef3d5077}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Applicant postcode" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_applicantpostcode" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_applicantpostcode" disabled="false" />
-                              </cell>
-                            </row>
-                          </rows>
-                        </section>
-                        <section name="The submission_section_7" id="751f4b23-4efb-4523-91a6-a1c074e29913" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
-                          <labels>
-                            <label description="Third party ownership" languagecode="1033" />
-                          </labels>
-                          <rows>
-                            <row>
-                              <cell locklevel="0" id="{301163b8-517b-4d84-9cda-451fc0408d48}" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Owned by applicant" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_ownedbyapplicant" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cre2c_ownedbyapplicant" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell locklevel="0" id="{e0fce453-8ce6-4f75-90cd-b46e2ef83cbc}" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Work for a business" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_workforabusiness" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_workforabusiness" disabled="false" uniqueid="{1ce37d7a-d630-430e-a14c-067f5d055d52}" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{eeff996a-f53d-4e1b-a3e6-c3f42f6415fe}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Selling on behalf of" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_sellingonbehalfof" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cre2c_sellingonbehalfof" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{cc76e80b-04bb-41b8-8e10-af20f46e2974}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Capacity" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_capacity" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cre2c_capacity" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{f25bc889-d517-44c0-9122-ecb3da490ee0}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Capacity - other" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_capacityother" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_capacityother" disabled="false" />
-                              </cell>
-                            </row>
-                          </rows>
-                        </section>
                       </sections>
                     </column>
                     <column width="50%">
                       <sections>
-                        <section name="tab_3_section_1" id="ba3ab233-7319-4dd1-80f1-c89460f15758" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                        <section name="previous_third_party_section" id="ecc90b1b-d555-476a-a403-8c2f9f8582a7" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                          <labels>
+                            <label description="Previous third party ownership" languagecode="1033" />
+                          </labels>
+                          <rows>
+                            <row>
+                              <cell locklevel="0" id="{fac216f5-fa6c-449a-9203-7e4f1da03a3e}" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Has previous owner?" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_haspreviousowner" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_haspreviousowner" disabled="false" uniqueid="{f9f33aeb-39ad-48b2-a40f-29720636579b}" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell locklevel="0" id="{9f4eac46-88e0-4905-972c-d81240fc8ccc}" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Owned by applicant" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_previousownedbyapplicant" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_previousownedbyapplicant" disabled="false" uniqueid="{e31ef583-48f4-4af8-80fc-82684c7b4977}" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell locklevel="0" id="{27b83b71-5bad-460c-9250-b393d6ad4b1d}" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Work for a business" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_previousworkforabusiness" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_previousworkforabusiness" disabled="false" uniqueid="{3fd64db8-0bb5-450f-abd6-c1e7c24c5107}" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{785861f2-b915-4869-8554-70a6af312184}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Selling on behalf of" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_previoussellingonbehalfof" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cre2c_previoussellingonbehalfof" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{1c4b3f33-94e1-438a-b826-1f7379d7399d}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Capacity" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_previouscapacity" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cre2c_previouscapacity" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{5af3b77c-c881-4c05-8875-97167afdbd77}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Capacity - other" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_previouscapacityother" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_previouscapacityother" disabled="false" />
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
+                        <section name="previous_applicant_section" id="911ff87c-0226-454c-afe4-ff5ce25c1d7c" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                          <labels>
+                            <label description="Previous applicant" languagecode="1033" />
+                          </labels>
+                          <rows>
+                            <row>
+                              <cell id="{6dd1b2b3-539c-40c6-928c-99d6776ce29f}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Applicant name" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_previousapplicantname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_previousapplicantname" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{b9822c88-1f6d-499b-93ce-0f606bbcf4f2}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Applicant business name" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_previousapplicantbusinessname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_previousapplicantbusinessname" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{991835ea-0109-4257-82d7-0a93dfaffd62}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Applicant email" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_previousapplicantemail" classid="{ADA2203E-B4CD-49BE-9DDF-234642B43B52}" datafieldname="cre2c_previousapplicantemail" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{107c550d-c823-453e-9be0-bdc47c9154b5}" locklevel="0" colspan="1" rowspan="3">
+                                <labels>
+                                  <label description="Applicant address" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_previousapplicantaddress" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cre2c_previousapplicantaddress" disabled="false" />
+                              </cell>
+                            </row>
+                            <row />
+                            <row />
+                            <row>
+                              <cell id="{2a76f68a-0119-49ee-8776-6668c4ec5bfd}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Applicant postcode" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_previousapplicantpostcode" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_previousapplicantpostcode" disabled="false" />
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
+                        <section name="previous_owner_section" id="ba3ab233-7319-4dd1-80f1-c89460f15758" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
                           <labels>
                             <label description="Previous owner" languagecode="1033" />
                           </labels>
@@ -5192,94 +5445,6 @@
                                   <label description="Owner postcode" languagecode="1033" />
                                 </labels>
                                 <control id="cre2c_previousownerpostcode" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_previousownerpostcode" disabled="false" />
-                              </cell>
-                            </row>
-                          </rows>
-                        </section>
-                        <section name="tab_3_section_2" id="911ff87c-0226-454c-afe4-ff5ce25c1d7c" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
-                          <labels>
-                            <label description="Previous applicant" languagecode="1033" />
-                          </labels>
-                          <rows>
-                            <row>
-                              <cell id="{6dd1b2b3-539c-40c6-928c-99d6776ce29f}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Applicant name" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_previousapplicantname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_previousapplicantname" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{991835ea-0109-4257-82d7-0a93dfaffd62}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Applicant email" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_previousapplicantemail" classid="{ADA2203E-B4CD-49BE-9DDF-234642B43B52}" datafieldname="cre2c_previousapplicantemail" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{107c550d-c823-453e-9be0-bdc47c9154b5}" locklevel="0" colspan="1" rowspan="3">
-                                <labels>
-                                  <label description="Applicant address" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_previousapplicantaddress" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cre2c_previousapplicantaddress" disabled="false" />
-                              </cell>
-                            </row>
-                            <row />
-                            <row />
-                            <row>
-                              <cell id="{2a76f68a-0119-49ee-8776-6668c4ec5bfd}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Applicant postcode" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_previousapplicantpostcode" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_previousapplicantpostcode" disabled="false" />
-                              </cell>
-                            </row>
-                          </rows>
-                        </section>
-                        <section name="tab_3_section_7" id="ecc90b1b-d555-476a-a403-8c2f9f8582a7" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
-                          <labels>
-                            <label description="Previous third party ownership" languagecode="1033" />
-                          </labels>
-                          <rows>
-                            <row>
-                              <cell locklevel="0" id="{9441373e-9b38-41e0-9ee6-99d793df76a7}" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Owned by applicant" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_previousownedbyapplicant" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cre2c_previousownedbyapplicant" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell locklevel="0" id="{27b83b71-5bad-460c-9250-b393d6ad4b1d}" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Work for a business" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_previousworkforabusiness" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_previousworkforabusiness" disabled="false" uniqueid="{3fd64db8-0bb5-450f-abd6-c1e7c24c5107}" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{785861f2-b915-4869-8554-70a6af312184}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Selling on behalf of" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_previoussellingonbehalfof" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cre2c_previoussellingonbehalfof" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{1c4b3f33-94e1-438a-b826-1f7379d7399d}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Capacity" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_previouscapacity" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cre2c_previouscapacity" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{5af3b77c-c881-4c05-8875-97167afdbd77}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Capacity - other" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_previouscapacityother" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_previouscapacityother" disabled="false" />
                               </cell>
                             </row>
                           </rows>
@@ -5373,6 +5538,11 @@
                 <event name="onchange" application="true" active="true" attribute="cre2c_previousworkforabusiness">
                   <Handlers>
                     <Handler functionName="previousWorkForABusinessOnChange" libraryName="cre2c_IvoryServiceScript" handlerUniqueId="{47343f1a-1d01-48ef-82d9-f99f216d7958}" enabled="true" parameters="" passExecutionContext="true" />
+                  </Handlers>
+                </event>
+                <event name="onchange" application="true" active="true" attribute="cre2c_haspreviousowner">
+                  <Handlers>
+                    <Handler functionName="hasPreviousOwnerOnChange" libraryName="cre2c_IvoryServiceScript" handlerUniqueId="{6173f518-e797-4ed9-b647-d9d7ba49a82e}" enabled="true" parameters="" passExecutionContext="true" />
                   </Handlers>
                 </event>
               </events>
@@ -5509,6 +5679,72 @@
                     <parameters>
                       <value type="Currency">cre2c_numberofitems</value>
                       <step type="Currency" static="true">1.0000</step>
+                    </parameters>
+                  </customControl>
+                </controlDescription>
+                <controlDescription forControl="{00a736e9-74b8-4fb3-b7e8-fbc59b6725e1}">
+                  <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
+                    <parameters>
+                      <datafieldname>cre2c_ownedbyapplicant</datafieldname>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_ownedbyapplicant</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_ownedbyapplicant</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_ownedbyapplicant</value>
+                    </parameters>
+                  </customControl>
+                </controlDescription>
+                <controlDescription forControl="{e31ef583-48f4-4af8-80fc-82684c7b4977}">
+                  <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
+                    <parameters>
+                      <datafieldname>cre2c_previousownedbyapplicant</datafieldname>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_previousownedbyapplicant</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_previousownedbyapplicant</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_previousownedbyapplicant</value>
+                    </parameters>
+                  </customControl>
+                </controlDescription>
+                <controlDescription forControl="{f9f33aeb-39ad-48b2-a40f-29720636579b}">
+                  <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
+                    <parameters>
+                      <datafieldname>cre2c_haspreviousowner</datafieldname>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_haspreviousowner</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_haspreviousowner</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_haspreviousowner</value>
                     </parameters>
                   </customControl>
                 </controlDescription>
@@ -6086,6 +6322,46 @@
               <MaxLength>4000</MaxLength>
               <displaynames>
                 <displayname description="Applicant address" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="" languagecode="1033" />
+              </Descriptions>
+            </attribute>
+            <attribute PhysicalName="cre2c_applicantbusinessname">
+              <Type>nvarchar</Type>
+              <Name>cre2c_applicantbusinessname</Name>
+              <LogicalName>cre2c_applicantbusinessname</LogicalName>
+              <RequiredLevel>required</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0.0.67</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format>text</Format>
+              <MaxLength>4000</MaxLength>
+              <Length>8000</Length>
+              <displaynames>
+                <displayname description="Applicant business name" languagecode="1033" />
               </displaynames>
               <Descriptions>
                 <Description description="" languagecode="1033" />
@@ -7006,6 +7282,67 @@
                 <Description description="" languagecode="1033" />
               </Descriptions>
             </attribute>
+            <attribute PhysicalName="cre2c_haspreviousowner">
+              <Type>bit</Type>
+              <Name>cre2c_haspreviousowner</Name>
+              <LogicalName>cre2c_haspreviousowner</LogicalName>
+              <RequiredLevel>required</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0.0.67</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <AppDefaultValue>0</AppDefaultValue>
+              <optionset Name="cre2c_cre2c_ivorysection2case_haspreviousowner">
+                <OptionSetType>bit</OptionSetType>
+                <IntroducedVersion>1.0.0.67</IntroducedVersion>
+                <IsCustomizable>1</IsCustomizable>
+                <displaynames>
+                  <displayname description="Local Enumeration" languagecode="1033" />
+                </displaynames>
+                <Descriptions>
+                  <Description description="" languagecode="1033" />
+                </Descriptions>
+                <options>
+                  <option value="1" ExternalValue="">
+                    <labels>
+                      <label description="Yes" languagecode="1033" />
+                    </labels>
+                  </option>
+                  <option value="0" ExternalValue="">
+                    <labels>
+                      <label description="No" languagecode="1033" />
+                    </labels>
+                  </option>
+                </options>
+              </optionset>
+              <displaynames>
+                <displayname description="Has previous owner" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="" languagecode="1033" />
+              </Descriptions>
+            </attribute>
             <attribute PhysicalName="cre2c_hasuniquefeatures">
               <Type>bit</Type>
               <Name>cre2c_hasuniquefeatures</Name>
@@ -7327,7 +7664,7 @@
               <Type>bit</Type>
               <Name>cre2c_ownedbyapplicant</Name>
               <LogicalName>cre2c_ownedbyapplicant</LogicalName>
-              <RequiredLevel>recommended</RequiredLevel>
+              <RequiredLevel>required</RequiredLevel>
               <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
               <ImeMode>auto</ImeMode>
               <ValidForUpdateApi>1</ValidForUpdateApi>
@@ -7988,6 +8325,46 @@
                 <Description description="" languagecode="1033" />
               </Descriptions>
             </attribute>
+            <attribute PhysicalName="cre2c_previousapplicantbusinessname">
+              <Type>nvarchar</Type>
+              <Name>cre2c_previousapplicantbusinessname</Name>
+              <LogicalName>cre2c_previousapplicantbusinessname</LogicalName>
+              <RequiredLevel>none</RequiredLevel>
+              <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+              <ImeMode>auto</ImeMode>
+              <ValidForUpdateApi>1</ValidForUpdateApi>
+              <ValidForReadApi>1</ValidForReadApi>
+              <ValidForCreateApi>1</ValidForCreateApi>
+              <IsCustomField>1</IsCustomField>
+              <IsAuditEnabled>1</IsAuditEnabled>
+              <IsSecured>0</IsSecured>
+              <IntroducedVersion>1.0.0.67</IntroducedVersion>
+              <IsCustomizable>1</IsCustomizable>
+              <IsRenameable>1</IsRenameable>
+              <CanModifySearchSettings>1</CanModifySearchSettings>
+              <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+              <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+              <SourceType>0</SourceType>
+              <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+              <IsSortableEnabled>0</IsSortableEnabled>
+              <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+              <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+              <IsDataSourceSecret>0</IsDataSourceSecret>
+              <AutoNumberFormat></AutoNumberFormat>
+              <IsSearchable>0</IsSearchable>
+              <IsFilterable>0</IsFilterable>
+              <IsRetrievable>0</IsRetrievable>
+              <IsLocalizable>0</IsLocalizable>
+              <Format>text</Format>
+              <MaxLength>4000</MaxLength>
+              <Length>8000</Length>
+              <displaynames>
+                <displayname description="Previous applicant business name" languagecode="1033" />
+              </displaynames>
+              <Descriptions>
+                <Description description="" languagecode="1033" />
+              </Descriptions>
+            </attribute>
             <attribute PhysicalName="cre2c_previousapplicantemail">
               <Type>nvarchar</Type>
               <Name>cre2c_previousapplicantemail</Name>
@@ -8231,7 +8608,7 @@
               <Type>bit</Type>
               <Name>cre2c_previousownedbyapplicant</Name>
               <LogicalName>cre2c_previousownedbyapplicant</LogicalName>
-              <RequiredLevel>recommended</RequiredLevel>
+              <RequiredLevel>required</RequiredLevel>
               <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
               <ImeMode>auto</ImeMode>
               <ValidForUpdateApi>1</ValidForUpdateApi>
@@ -10237,7 +10614,7 @@
             <FormActivationState>1</FormActivationState>
             <form headerdensity="HighWithControls">
               <tabs>
-                <tab name="The submission" id="eaea39fa-8f95-42ec-93c4-191dd212ed04" IsUserDefined="0" locklevel="0" showlabel="true">
+                <tab name="submission_tab" id="eaea39fa-8f95-42ec-93c4-191dd212ed04" IsUserDefined="0" locklevel="0" showlabel="true">
                   <labels>
                     <label description="The submission" languagecode="1033" />
                   </labels>
@@ -10400,7 +10777,7 @@
                     </column>
                   </columns>
                 </tab>
-                <tab name="The item" id="df05c54f-7754-4b5f-a56b-6bc0642f41ff" IsUserDefined="0" locklevel="0" showlabel="true">
+                <tab name="item_tab" id="df05c54f-7754-4b5f-a56b-6bc0642f41ff" IsUserDefined="0" locklevel="0" showlabel="true">
                   <labels>
                     <label description="The item" languagecode="1033" />
                   </labels>
@@ -10631,13 +11008,109 @@
                     </column>
                   </columns>
                 </tab>
-                <tab name="tab_5" id="c3fa65c5-d953-4703-b569-49dcb54b63c9" IsUserDefined="0" locklevel="0" showlabel="true">
+                <tab name="ownership_tab" id="c3fa65c5-d953-4703-b569-49dcb54b63c9" IsUserDefined="0" locklevel="0" showlabel="true">
                   <labels>
                     <label description="Ownership" languagecode="1033" />
                   </labels>
                   <columns>
                     <column width="50%">
                       <sections>
+                        <section name="third_party_section" id="e5a5378a-7638-470d-9c49-e529c8329111" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                          <labels>
+                            <label description="Third party ownership" languagecode="1033" />
+                          </labels>
+                          <rows>
+                            <row>
+                              <cell locklevel="0" id="{49891ffc-ce2d-46a2-a67f-56c28989b466}" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Owned by applicant" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_ownedbyapplicant" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_ownedbyapplicant" disabled="false" uniqueid="{e37ca816-0ea1-4082-a403-c84edf833ef2}" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell locklevel="0" id="{48b98036-c4ee-43cc-83b6-c4a847f412d7}" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Work for a business" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_workforabusiness" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_workforabusiness" disabled="false" uniqueid="{f7bfe216-f45d-4dee-a5c6-b9dfb1917d18}" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{9dd7547a-e0cc-46dd-9c67-acffed2e1600}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Selling on behalf of" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_sellingonbehalfof" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cre2c_sellingonbehalfof" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{0546219b-99aa-4bd6-b8ac-ab0caff9c317}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Capacity" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_capacity" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cre2c_capacity" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{2236570f-b4b7-40f3-86c2-656aa4494961}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Capacity - other" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_capacityother" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_capacityother" disabled="false" />
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
+                        <section name="applicant_section" id="f9433fd2-e076-479f-971b-f1188f9ae3d6" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                          <labels>
+                            <label description="Applicant" languagecode="1033" />
+                          </labels>
+                          <rows>
+                            <row>
+                              <cell id="{c5728229-2664-4fbf-8933-a99022f4f275}" locklevel="0">
+                                <labels>
+                                  <label description="Applicant name" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_applicantname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_applicantname" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{4b3224a7-9762-4241-bae6-a5878f2573ec}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Applicant business name" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_applicantbusinessname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_applicantbusinessname" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{e1b44036-2ffd-4a8c-994a-09132a74b01e}" locklevel="0">
+                                <labels>
+                                  <label description="Applicant email" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_applicantemail" classid="{ADA2203E-B4CD-49BE-9DDF-234642B43B52}" datafieldname="cre2c_applicantemail" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{4470b227-c59d-4beb-87da-0a10e591a535}" locklevel="0" rowspan="3">
+                                <labels>
+                                  <label description="Applicant address" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_applicantaddress" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cre2c_applicantaddress" disabled="false" />
+                              </cell>
+                            </row>
+                            <row />
+                            <row />
+                            <row>
+                              <cell id="{880bccd1-064b-4e97-8c0f-842d0fbbd834}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Applicant postcode" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_applicantpostcode" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_applicantpostcode" disabled="false" />
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
                         <section name="The submission_section_6" id="eba09c1c-74f4-47b9-9737-588ae6987927" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
                           <labels>
                             <label description="Owner" languagecode="1033" />
@@ -10679,94 +11152,6 @@
                             </row>
                           </rows>
                         </section>
-                        <section name="Applicant details" id="f9433fd2-e076-479f-971b-f1188f9ae3d6" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
-                          <labels>
-                            <label description="Applicant" languagecode="1033" />
-                          </labels>
-                          <rows>
-                            <row>
-                              <cell id="{c5728229-2664-4fbf-8933-a99022f4f275}" locklevel="0">
-                                <labels>
-                                  <label description="Applicant name" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_applicantname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_applicantname" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{e1b44036-2ffd-4a8c-994a-09132a74b01e}" locklevel="0">
-                                <labels>
-                                  <label description="Applicant email" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_applicantemail" classid="{ADA2203E-B4CD-49BE-9DDF-234642B43B52}" datafieldname="cre2c_applicantemail" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{4470b227-c59d-4beb-87da-0a10e591a535}" locklevel="0" rowspan="3">
-                                <labels>
-                                  <label description="Applicant address" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_applicantaddress" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cre2c_applicantaddress" disabled="false" />
-                              </cell>
-                            </row>
-                            <row />
-                            <row />
-                            <row>
-                              <cell id="{880bccd1-064b-4e97-8c0f-842d0fbbd834}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Applicant postcode" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_applicantpostcode" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_applicantpostcode" disabled="false" />
-                              </cell>
-                            </row>
-                          </rows>
-                        </section>
-                        <section name="The submission_section_7" id="e5a5378a-7638-470d-9c49-e529c8329111" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
-                          <labels>
-                            <label description="Third party ownership" languagecode="1033" />
-                          </labels>
-                          <rows>
-                            <row>
-                              <cell locklevel="0" id="{82de2f08-5069-4e05-a8b4-430caf58daf8}" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Owned by applicant" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_ownedbyapplicant" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cre2c_ownedbyapplicant" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell locklevel="0" id="{48b98036-c4ee-43cc-83b6-c4a847f412d7}" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Work for a business" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_workforabusiness" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_workforabusiness" disabled="false" uniqueid="{f7bfe216-f45d-4dee-a5c6-b9dfb1917d18}" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{9dd7547a-e0cc-46dd-9c67-acffed2e1600}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Selling on behalf of" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_sellingonbehalfof" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cre2c_sellingonbehalfof" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{0546219b-99aa-4bd6-b8ac-ab0caff9c317}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Capacity" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_capacity" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cre2c_capacity" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{2236570f-b4b7-40f3-86c2-656aa4494961}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Capacity - other" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_capacityother" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_capacityother" disabled="false" />
-                              </cell>
-                            </row>
-                          </rows>
-                        </section>
                         <section name="tab_5_section_7" id="ef4d81a8-24e7-439b-97a3-6ca2ab17a220" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
                           <labels>
                             <label description="New Section" languagecode="1033" />
@@ -10799,7 +11184,111 @@
                     </column>
                     <column width="50%">
                       <sections>
-                        <section name="tab_5_section_2" id="e2a70249-51ad-4046-8788-14bbe4ffab7b" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                        <section name="previous_third_party_section" id="eaedf542-9681-4539-9a4d-4d8c0d5cc213" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                          <labels>
+                            <label description="Previous third party ownership" languagecode="1033" />
+                          </labels>
+                          <rows>
+                            <row>
+                              <cell locklevel="0" id="{bc89a4af-7fe8-40b3-bc07-29e217a5cee6}" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Has previous owner?" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_haspreviousowner" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_haspreviousowner" disabled="false" uniqueid="{67464119-2d7f-4a44-a428-96e57a9a797a}" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell locklevel="0" id="{dabf6915-ccc5-493c-9b51-39b95eb732c7}" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Owned by applicant" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_previousownedbyapplicant" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_previousownedbyapplicant" disabled="false" uniqueid="{8938d510-3449-4a12-a44d-299b8a9d0a70}" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell locklevel="0" id="{4725e3b3-07c2-4849-9985-31f9eeb846e3}" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Work for a business" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_previousworkforabusiness" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_previousworkforabusiness" disabled="false" uniqueid="{fc42b22c-a067-4015-ba61-d42d64bc610f}" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{4ccf514f-9b3b-4c24-99da-7b3cc1a7f2e4}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Selling on behalf of" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_previoussellingonbehalfof" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cre2c_previoussellingonbehalfof" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{0e5d9f22-1a8c-43e4-845c-0ed0cbd304b8}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Capacity" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_previouscapacity" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cre2c_previouscapacity" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{4667062b-cf54-4d6b-847d-2d7a7da35618}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Capacity - other" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_previouscapacityother" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_previouscapacityother" disabled="false" />
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
+                        <section name="previous_applicant_section" id="c98e6c6b-bce7-409a-9092-8fb43959af93" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
+                          <labels>
+                            <label description="Previous applicant" languagecode="1033" />
+                          </labels>
+                          <rows>
+                            <row>
+                              <cell id="{453e1449-4056-4f04-b29e-bf767419f873}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Applicant name" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_previousapplicantname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_previousapplicantname" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{7bac955e-3dea-4886-9402-ed0fb9284ec0}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Applicant business name" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_previousapplicantbusinessname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_previousapplicantbusinessname" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{9c0c09e3-0ce1-48ae-b36e-3266b4dbd479}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Applicant email" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_previousapplicantemail" classid="{ADA2203E-B4CD-49BE-9DDF-234642B43B52}" datafieldname="cre2c_previousapplicantemail" disabled="false" />
+                              </cell>
+                            </row>
+                            <row>
+                              <cell id="{d5bd9c62-32c7-46b1-89c4-6796ae08c31f}" locklevel="0" colspan="1" rowspan="3">
+                                <labels>
+                                  <label description="Applicant address" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_previousapplicantaddress" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cre2c_previousapplicantaddress" disabled="false" />
+                              </cell>
+                            </row>
+                            <row />
+                            <row />
+                            <row>
+                              <cell id="{d63ecb0b-879a-4d99-88f8-fa449c7b13a2}" locklevel="0" colspan="1" rowspan="1">
+                                <labels>
+                                  <label description="Applicant postcode" languagecode="1033" />
+                                </labels>
+                                <control id="cre2c_previousapplicantpostcode" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_previousapplicantpostcode" disabled="false" />
+                              </cell>
+                            </row>
+                          </rows>
+                        </section>
+                        <section name="previous_owner_section" id="e2a70249-51ad-4046-8788-14bbe4ffab7b" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
                           <labels>
                             <label description="Previous owner" languagecode="1033" />
                           </labels>
@@ -10840,99 +11329,11 @@
                             </row>
                           </rows>
                         </section>
-                        <section name="tab_5_section_6" id="c98e6c6b-bce7-409a-9092-8fb43959af93" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
-                          <labels>
-                            <label description="Previous applicant" languagecode="1033" />
-                          </labels>
-                          <rows>
-                            <row>
-                              <cell id="{453e1449-4056-4f04-b29e-bf767419f873}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Applicant name" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_previousapplicantname" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_previousapplicantname" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{9c0c09e3-0ce1-48ae-b36e-3266b4dbd479}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Applicant email" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_previousapplicantemail" classid="{ADA2203E-B4CD-49BE-9DDF-234642B43B52}" datafieldname="cre2c_previousapplicantemail" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{d5bd9c62-32c7-46b1-89c4-6796ae08c31f}" locklevel="0" colspan="1" rowspan="3">
-                                <labels>
-                                  <label description="Applicant address" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_previousapplicantaddress" classid="{E0DECE4B-6FC8-4A8F-A065-082708572369}" datafieldname="cre2c_previousapplicantaddress" disabled="false" />
-                              </cell>
-                            </row>
-                            <row />
-                            <row />
-                            <row>
-                              <cell id="{d63ecb0b-879a-4d99-88f8-fa449c7b13a2}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Applicant postcode" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_previousapplicantpostcode" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_previousapplicantpostcode" disabled="false" />
-                              </cell>
-                            </row>
-                          </rows>
-                        </section>
-                        <section name="tab_5_section_9" id="eaedf542-9681-4539-9a4d-4d8c0d5cc213" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
-                          <labels>
-                            <label description="Previous third party ownership" languagecode="1033" />
-                          </labels>
-                          <rows>
-                            <row>
-                              <cell locklevel="0" id="{08e21b03-f429-4599-b209-4a1e7342b206}" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Previous owned by applicant" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_previousownedbyapplicant" classid="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}" datafieldname="cre2c_previousownedbyapplicant" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell locklevel="0" id="{4725e3b3-07c2-4849-9985-31f9eeb846e3}" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Previous work for a business" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_previousworkforabusiness" classid="{F9A8A302-114E-466A-B582-6771B2AE0D92}" datafieldname="cre2c_previousworkforabusiness" disabled="false" uniqueid="{fc42b22c-a067-4015-ba61-d42d64bc610f}" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{4ccf514f-9b3b-4c24-99da-7b3cc1a7f2e4}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Selling on behalf of" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_previoussellingonbehalfof" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cre2c_previoussellingonbehalfof" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{0e5d9f22-1a8c-43e4-845c-0ed0cbd304b8}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Capacity" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_previouscapacity" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cre2c_previouscapacity" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{4667062b-cf54-4d6b-847d-2d7a7da35618}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Capacity - other" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_previouscapacityother" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_previouscapacityother" disabled="false" />
-                              </cell>
-                            </row>
-                          </rows>
-                        </section>
                       </sections>
                     </column>
                   </columns>
                 </tab>
-                <tab name="Expert assessment" id="d6efe9b2-c1f3-4958-a502-e3d3b30dfec7" IsUserDefined="0" locklevel="0" showlabel="true">
+                <tab name="expert_assessment_tab" id="d6efe9b2-c1f3-4958-a502-e3d3b30dfec7" IsUserDefined="0" locklevel="0" showlabel="true">
                   <labels>
                     <label description="Expert assessment" languagecode="1033" />
                   </labels>
@@ -11238,6 +11639,11 @@
                     <Handler functionName="previousWorkForABusinessOnChange" libraryName="cre2c_IvoryServiceScript" handlerUniqueId="{2007ee55-8101-43a8-aed5-3a186e3d7e98}" enabled="true" parameters="" passExecutionContext="true" />
                   </Handlers>
                 </event>
+                <event name="onchange" application="true" active="true" attribute="cre2c_haspreviousowner">
+                  <Handlers>
+                    <Handler functionName="hasPreviousOwnerOnChange" libraryName="cre2c_IvoryServiceScript" handlerUniqueId="{a0e31421-1da8-412e-81aa-c98af013f357}" enabled="true" parameters="" passExecutionContext="true" />
+                  </Handlers>
+                </event>
               </events>
               <controlDescriptions>
                 <controlDescription forControl="{2bea9329-316d-45ac-a203-6220043d4dce}">
@@ -11369,6 +11775,72 @@
                   <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
                     <parameters>
                       <value type="TwoOptions">cre2c_previousworkforabusiness</value>
+                    </parameters>
+                  </customControl>
+                </controlDescription>
+                <controlDescription forControl="{e37ca816-0ea1-4082-a403-c84edf833ef2}">
+                  <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
+                    <parameters>
+                      <datafieldname>cre2c_ownedbyapplicant</datafieldname>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_ownedbyapplicant</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_ownedbyapplicant</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_ownedbyapplicant</value>
+                    </parameters>
+                  </customControl>
+                </controlDescription>
+                <controlDescription forControl="{67464119-2d7f-4a44-a428-96e57a9a797a}">
+                  <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
+                    <parameters>
+                      <datafieldname>cre2c_haspreviousowner</datafieldname>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_haspreviousowner</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_haspreviousowner</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_haspreviousowner</value>
+                    </parameters>
+                  </customControl>
+                </controlDescription>
+                <controlDescription forControl="{8938d510-3449-4a12-a44d-299b8a9d0a70}">
+                  <customControl id="{67FAC785-CD58-4F9F-ABB3-4B7DDC6ED5ED}">
+                    <parameters>
+                      <datafieldname>cre2c_previousownedbyapplicant</datafieldname>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="0" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_previousownedbyapplicant</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="2" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_previousownedbyapplicant</value>
+                    </parameters>
+                  </customControl>
+                  <customControl formFactor="1" name="MscrmControls.FieldControls.ToggleControl">
+                    <parameters>
+                      <value type="TwoOptions">cre2c_previousownedbyapplicant</value>
                     </parameters>
                   </customControl>
                 </controlDescription>
@@ -13409,6 +13881,180 @@
       <PrimaryEntity>cre2c_IvorySection10Case</PrimaryEntity>
       <LocalizedNames>
         <LocalizedName languagecode="1033" description="Group registration item count" />
+      </LocalizedNames>
+      <Descriptions>
+        <Description languagecode="1033" description="Click to add description" />
+      </Descriptions>
+    </Workflow>
+    <Workflow WorkflowId="{0ab339c1-1ca1-ec11-b400-6045bd105015}" Name="Works for a business" Description="Click to add description">
+      <XamlFileName>/Workflows/Worksforabusiness-0AB339C1-1CA1-EC11-B400-6045BD105015.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>2</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.67</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ProcessTriggerScope>2</ProcessTriggerScope>
+      <PrimaryEntity>cre2c_IvorySection2Case</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1033" description="Works for a business" />
+      </LocalizedNames>
+      <Descriptions>
+        <Description languagecode="1033" description="Click to add description" />
+      </Descriptions>
+    </Workflow>
+    <Workflow WorkflowId="{6df97473-29a1-ec11-b400-6045bd105015}" Name="Has previous owner changes" Description="Click to add description">
+      <XamlFileName>/Workflows/Haspreviousownerchanges-6DF97473-29A1-EC11-B400-6045BD105015.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>2</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.67</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ProcessTriggerScope>2</ProcessTriggerScope>
+      <PrimaryEntity>cre2c_IvorySection2Case</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1033" description="Has previous owner changes" />
+      </LocalizedNames>
+      <Descriptions>
+        <Description languagecode="1033" description="Click to add description" />
+      </Descriptions>
+    </Workflow>
+    <Workflow WorkflowId="{12cc889f-39a1-ec11-b400-6045bd105015}" Name="Previous works for a business" Description="Click to add description">
+      <XamlFileName>/Workflows/Previousworksforabusiness-12CC889F-39A1-EC11-B400-6045BD105015.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>2</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.67</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ProcessTriggerScope>2</ProcessTriggerScope>
+      <PrimaryEntity>cre2c_IvorySection2Case</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1033" description="Previous works for a business" />
+      </LocalizedNames>
+      <Descriptions>
+        <Description languagecode="1033" description="Click to add description" />
+      </Descriptions>
+    </Workflow>
+    <Workflow WorkflowId="{0456af5b-40a1-ec11-b400-6045bd105015}" Name="Works for a business" Description="Click to add description">
+      <XamlFileName>/Workflows/Worksforabusiness-0456AF5B-40A1-EC11-B400-6045BD105015.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>2</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.67</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ProcessTriggerScope>2</ProcessTriggerScope>
+      <PrimaryEntity>cre2c_IvorySection10Case</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1033" description="Works for a business" />
+      </LocalizedNames>
+      <Descriptions>
+        <Description languagecode="1033" description="Click to add description" />
+      </Descriptions>
+    </Workflow>
+    <Workflow WorkflowId="{f6f988d8-42a1-ec11-b400-6045bd105015}" Name="Has previous owner changes" Description="Click to add description">
+      <XamlFileName>/Workflows/Haspreviousownerchanges-F6F988D8-42A1-EC11-B400-6045BD105015.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>2</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.67</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ProcessTriggerScope>2</ProcessTriggerScope>
+      <PrimaryEntity>cre2c_IvorySection10Case</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1033" description="Has previous owner changes" />
+      </LocalizedNames>
+      <Descriptions>
+        <Description languagecode="1033" description="Click to add description" />
+      </Descriptions>
+    </Workflow>
+    <Workflow WorkflowId="{a632cc50-43a1-ec11-b400-6045bd105015}" Name="Previous works for a business" Description="Click to add description">
+      <XamlFileName>/Workflows/Previousworksforabusiness-A632CC50-43A1-EC11-B400-6045BD105015.xaml</XamlFileName>
+      <Type>1</Type>
+      <Subprocess>0</Subprocess>
+      <Category>2</Category>
+      <Mode>1</Mode>
+      <Scope>4</Scope>
+      <OnDemand>0</OnDemand>
+      <TriggerOnCreate>0</TriggerOnCreate>
+      <TriggerOnDelete>0</TriggerOnDelete>
+      <AsyncAutodelete>0</AsyncAutodelete>
+      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
+      <StateCode>1</StateCode>
+      <StatusCode>2</StatusCode>
+      <RunAs>1</RunAs>
+      <IsTransacted>1</IsTransacted>
+      <IntroducedVersion>1.0.0.67</IntroducedVersion>
+      <IsCustomizable>1</IsCustomizable>
+      <BusinessProcessType>0</BusinessProcessType>
+      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
+      <ProcessTriggerScope>2</ProcessTriggerScope>
+      <PrimaryEntity>cre2c_IvorySection10Case</PrimaryEntity>
+      <LocalizedNames>
+        <LocalizedName languagecode="1033" description="Previous works for a business" />
       </LocalizedNames>
       <Descriptions>
         <Description languagecode="1033" description="Click to add description" />

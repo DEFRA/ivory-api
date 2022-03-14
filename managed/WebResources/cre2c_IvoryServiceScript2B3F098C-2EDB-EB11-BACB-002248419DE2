@@ -35,6 +35,7 @@ const DataVerseFieldName = {
   EXEMPTION_TYPE: 'cre2c_exemptiontype',
   GROUP_REGISTRATION: 'cre2c_groupregistration',
   HAS_DISTINGUISHING_FEATURES: 'cre2c_hasuniquefeatures',
+  HAS_PREVIOUS_OWNER: 'cre2c_haspreviousowner',
   INTENTION: 'cre2c_intention',
   ITEM_SUMMARY: 'cre2c_itemsummary',
   MANUALLY_CREATED: 'cre2c_manuallycreated',
@@ -210,6 +211,8 @@ this.formOnLoad = async (executionContext, section) => {
   this.setAgeExemptionReasons(formContext, isSection2);
 
   this.ivoryAgeOnChange(executionContext);
+
+  this.hasPreviousOwnerOnChange(executionContext);
 
   if (isSection2) {
     this._setCertificateKey(formContext)
@@ -580,6 +583,23 @@ this.previousWorkForABusinessOnChange = executionContext => {
 
   const formContext = executionContext.getFormContext();
   this._filterSellingOnBehalfOfChoices(formContext, false);
+}
+
+this.hasPreviousOwnerOnChange = executionContext => {
+  'use strict';
+
+  const formContext = executionContext.getFormContext();
+
+  const hasPreviousOwner = formContext.getAttribute(DataVerseFieldName.HAS_PREVIOUS_OWNER).getValue();
+
+  const ownershipTab = formContext.ui.tabs.get('ownership_tab');
+
+  const previousApplicantSection = ownershipTab.sections.get('previous_applicant_section');
+  const previousOwnerSection = ownershipTab.sections.get('previous_owner_section');
+  
+  previousApplicantSection.setVisible(hasPreviousOwner);
+  previousOwnerSection.setVisible(hasPreviousOwner);
+
 }
 
 this.setStatuses = (formContext, isSection2) => {
