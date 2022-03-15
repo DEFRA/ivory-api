@@ -1824,7 +1824,7 @@
               <Type>nvarchar</Type>
               <Name>cre2c_capacityother</Name>
               <LogicalName>cre2c_capacityother</LogicalName>
-              <RequiredLevel>required</RequiredLevel>
+              <RequiredLevel>none</RequiredLevel>
               <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
               <ImeMode>auto</ImeMode>
               <ValidForUpdateApi>1</ValidForUpdateApi>
@@ -3087,7 +3087,7 @@
               <Type>nvarchar</Type>
               <Name>cre2c_previouscapacityother</Name>
               <LogicalName>cre2c_previouscapacityother</LogicalName>
-              <RequiredLevel>required</RequiredLevel>
+              <RequiredLevel>none</RequiredLevel>
               <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
               <ImeMode>auto</ImeMode>
               <ValidForUpdateApi>1</ValidForUpdateApi>
@@ -5200,14 +5200,6 @@
                                 <control id="cre2c_capacity" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cre2c_capacity" disabled="false" />
                               </cell>
                             </row>
-                            <row>
-                              <cell id="{f25bc889-d517-44c0-9122-ecb3da490ee0}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Capacity - other" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_capacityother" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_capacityother" disabled="false" />
-                              </cell>
-                            </row>
                           </rows>
                         </section>
                         <section name="applicant_section" id="f747df86-dd82-43b0-8f2e-f7c288478761" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
@@ -5347,14 +5339,6 @@
                                   <label description="Capacity" languagecode="1033" />
                                 </labels>
                                 <control id="cre2c_previouscapacity" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cre2c_previouscapacity" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{5af3b77c-c881-4c05-8875-97167afdbd77}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Capacity - other" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_previouscapacityother" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_previouscapacityother" disabled="false" />
                               </cell>
                             </row>
                           </rows>
@@ -6668,7 +6652,7 @@
               <Type>nvarchar</Type>
               <Name>cre2c_capacityother</Name>
               <LogicalName>cre2c_capacityother</LogicalName>
-              <RequiredLevel>required</RequiredLevel>
+              <RequiredLevel>none</RequiredLevel>
               <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
               <ImeMode>auto</ImeMode>
               <ValidForUpdateApi>1</ValidForUpdateApi>
@@ -8568,7 +8552,7 @@
               <Type>nvarchar</Type>
               <Name>cre2c_previouscapacityother</Name>
               <LogicalName>cre2c_previouscapacityother</LogicalName>
-              <RequiredLevel>required</RequiredLevel>
+              <RequiredLevel>none</RequiredLevel>
               <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
               <ImeMode>auto</ImeMode>
               <ValidForUpdateApi>1</ValidForUpdateApi>
@@ -11052,14 +11036,6 @@
                                 <control id="cre2c_capacity" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cre2c_capacity" disabled="false" />
                               </cell>
                             </row>
-                            <row>
-                              <cell id="{2236570f-b4b7-40f3-86c2-656aa4494961}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Capacity - other" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_capacityother" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_capacityother" disabled="false" />
-                              </cell>
-                            </row>
                           </rows>
                         </section>
                         <section name="applicant_section" id="f9433fd2-e076-479f-971b-f1188f9ae3d6" IsUserDefined="0" locklevel="0" showlabel="true" showbar="false" layout="varwidth" celllabelalignment="Left" celllabelposition="Left" columns="1" labelwidth="115">
@@ -11227,14 +11203,6 @@
                                   <label description="Capacity" languagecode="1033" />
                                 </labels>
                                 <control id="cre2c_previouscapacity" classid="{3EF39988-22BB-4F0B-BBBE-64B5A3748AEE}" datafieldname="cre2c_previouscapacity" disabled="false" />
-                              </cell>
-                            </row>
-                            <row>
-                              <cell id="{4667062b-cf54-4d6b-847d-2d7a7da35618}" locklevel="0" colspan="1" rowspan="1">
-                                <labels>
-                                  <label description="Capacity - other" languagecode="1033" />
-                                </labels>
-                                <control id="cre2c_previouscapacityother" classid="{4273EDBD-AC1D-40D3-9FB2-095C621B552D}" datafieldname="cre2c_previouscapacityother" disabled="false" />
                               </cell>
                             </row>
                           </rows>
@@ -13451,35 +13419,6 @@
         <Description languagecode="1033" description="Click to add description" />
       </Descriptions>
     </Workflow>
-    <Workflow WorkflowId="{3ec9abfd-276e-ec11-8943-00224840509f}" Name="Capacity - Other visibility" Description="Click to add description">
-      <XamlFileName>/Workflows/Capacity-Othervisibility-3EC9ABFD-276E-EC11-8943-00224840509F.xaml</XamlFileName>
-      <Type>1</Type>
-      <Subprocess>0</Subprocess>
-      <Category>2</Category>
-      <Mode>1</Mode>
-      <Scope>4</Scope>
-      <OnDemand>0</OnDemand>
-      <TriggerOnCreate>0</TriggerOnCreate>
-      <TriggerOnDelete>0</TriggerOnDelete>
-      <AsyncAutodelete>0</AsyncAutodelete>
-      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
-      <StateCode>1</StateCode>
-      <StatusCode>2</StatusCode>
-      <RunAs>1</RunAs>
-      <IsTransacted>1</IsTransacted>
-      <IntroducedVersion>1.0.0.53</IntroducedVersion>
-      <IsCustomizable>1</IsCustomizable>
-      <BusinessProcessType>0</BusinessProcessType>
-      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
-      <ProcessTriggerScope>2</ProcessTriggerScope>
-      <PrimaryEntity>cre2c_IvorySection10Case</PrimaryEntity>
-      <LocalizedNames>
-        <LocalizedName languagecode="1033" description="Capacity - Other visibility" />
-      </LocalizedNames>
-      <Descriptions>
-        <Description languagecode="1033" description="Click to add description" />
-      </Descriptions>
-    </Workflow>
     <Workflow WorkflowId="{d2a2931d-496e-ec11-8943-00224840509f}" Name="Capacity visibility" Description="Click to add description">
       <XamlFileName>/Workflows/Capacityvisibility-D2A2931D-496E-EC11-8943-00224840509F.xaml</XamlFileName>
       <Type>1</Type>
@@ -13567,35 +13506,6 @@
         <Description languagecode="1033" description="Click to add description" />
       </Descriptions>
     </Workflow>
-    <Workflow WorkflowId="{adcd3d70-516e-ec11-8943-00224840509f}" Name="Capacity - Other visibility" Description="Click to add description">
-      <XamlFileName>/Workflows/Capacity-Othervisibility-ADCD3D70-516E-EC11-8943-00224840509F.xaml</XamlFileName>
-      <Type>1</Type>
-      <Subprocess>0</Subprocess>
-      <Category>2</Category>
-      <Mode>1</Mode>
-      <Scope>4</Scope>
-      <OnDemand>0</OnDemand>
-      <TriggerOnCreate>0</TriggerOnCreate>
-      <TriggerOnDelete>0</TriggerOnDelete>
-      <AsyncAutodelete>0</AsyncAutodelete>
-      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
-      <StateCode>1</StateCode>
-      <StatusCode>2</StatusCode>
-      <RunAs>1</RunAs>
-      <IsTransacted>1</IsTransacted>
-      <IntroducedVersion>1.0.0.53</IntroducedVersion>
-      <IsCustomizable>1</IsCustomizable>
-      <BusinessProcessType>0</BusinessProcessType>
-      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
-      <ProcessTriggerScope>2</ProcessTriggerScope>
-      <PrimaryEntity>cre2c_IvorySection2Case</PrimaryEntity>
-      <LocalizedNames>
-        <LocalizedName languagecode="1033" description="Capacity - Other visibility" />
-      </LocalizedNames>
-      <Descriptions>
-        <Description languagecode="1033" description="Click to add description" />
-      </Descriptions>
-    </Workflow>
     <Workflow WorkflowId="{50457ade-566e-ec11-8943-00224840509f}" Name="Why ivory exempt changes" Description="Click to add description">
       <XamlFileName>/Workflows/Whyivoryexemptchanges-50457ADE-566E-EC11-8943-00224840509F.xaml</XamlFileName>
       <Type>1</Type>
@@ -13678,64 +13588,6 @@
       <PrimaryEntity>cre2c_IvorySection10Case</PrimaryEntity>
       <LocalizedNames>
         <LocalizedName languagecode="1033" description="Previous Capacity visibility" />
-      </LocalizedNames>
-      <Descriptions>
-        <Description languagecode="1033" description="Click to add description" />
-      </Descriptions>
-    </Workflow>
-    <Workflow WorkflowId="{0e7b6dfa-d86e-ec11-8943-00224840509f}" Name="Previous Capacity - Other visibility" Description="Click to add description">
-      <XamlFileName>/Workflows/PreviousCapacity-Othervisibility-0E7B6DFA-D86E-EC11-8943-00224840509F.xaml</XamlFileName>
-      <Type>1</Type>
-      <Subprocess>0</Subprocess>
-      <Category>2</Category>
-      <Mode>1</Mode>
-      <Scope>4</Scope>
-      <OnDemand>0</OnDemand>
-      <TriggerOnCreate>0</TriggerOnCreate>
-      <TriggerOnDelete>0</TriggerOnDelete>
-      <AsyncAutodelete>0</AsyncAutodelete>
-      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
-      <StateCode>1</StateCode>
-      <StatusCode>2</StatusCode>
-      <RunAs>1</RunAs>
-      <IsTransacted>1</IsTransacted>
-      <IntroducedVersion>1.0.0.53</IntroducedVersion>
-      <IsCustomizable>1</IsCustomizable>
-      <BusinessProcessType>0</BusinessProcessType>
-      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
-      <ProcessTriggerScope>2</ProcessTriggerScope>
-      <PrimaryEntity>cre2c_IvorySection10Case</PrimaryEntity>
-      <LocalizedNames>
-        <LocalizedName languagecode="1033" description="Previous Capacity - Other visibility" />
-      </LocalizedNames>
-      <Descriptions>
-        <Description languagecode="1033" description="Click to add description" />
-      </Descriptions>
-    </Workflow>
-    <Workflow WorkflowId="{702b6184-da6e-ec11-8943-00224840509f}" Name="Previous Capacity - Other visibility" Description="Click to add description">
-      <XamlFileName>/Workflows/PreviousCapacity-Othervisibility-702B6184-DA6E-EC11-8943-00224840509F.xaml</XamlFileName>
-      <Type>1</Type>
-      <Subprocess>0</Subprocess>
-      <Category>2</Category>
-      <Mode>1</Mode>
-      <Scope>4</Scope>
-      <OnDemand>0</OnDemand>
-      <TriggerOnCreate>0</TriggerOnCreate>
-      <TriggerOnDelete>0</TriggerOnDelete>
-      <AsyncAutodelete>0</AsyncAutodelete>
-      <SyncWorkflowLogOnFailure>0</SyncWorkflowLogOnFailure>
-      <StateCode>1</StateCode>
-      <StatusCode>2</StatusCode>
-      <RunAs>1</RunAs>
-      <IsTransacted>1</IsTransacted>
-      <IntroducedVersion>1.0.0.53</IntroducedVersion>
-      <IsCustomizable>1</IsCustomizable>
-      <BusinessProcessType>0</BusinessProcessType>
-      <IsCustomProcessingStepAllowedForOtherPublishers>1</IsCustomProcessingStepAllowedForOtherPublishers>
-      <ProcessTriggerScope>2</ProcessTriggerScope>
-      <PrimaryEntity>cre2c_IvorySection2Case</PrimaryEntity>
-      <LocalizedNames>
-        <LocalizedName languagecode="1033" description="Previous Capacity - Other visibility" />
       </LocalizedNames>
       <Descriptions>
         <Description languagecode="1033" description="Click to add description" />
@@ -14775,11 +14627,6 @@
         <displayname description="Capacities" languagecode="1033" />
       </displaynames>
       <options>
-        <option value="881990000">
-          <labels>
-            <label description="Agent" languagecode="1033" />
-          </labels>
-        </option>
         <option value="881990001">
           <labels>
             <label description="Executor or administrator" languagecode="1033" />
@@ -14792,7 +14639,7 @@
         </option>
         <option value="881990003">
           <labels>
-            <label description="Other" languagecode="1033" />
+            <label description="Agent or business acting on behalf of either of the above" languagecode="1033" />
           </labels>
         </option>
       </options>
