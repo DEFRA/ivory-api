@@ -1,4 +1,7 @@
 <environmentvariabledefinition schemaname="cre2c_FRONT_END_URL">
+  <description default="The URL for front end service">
+    <label description="The URL for front end service" languagecode="1033" />
+  </description>
   <displayname default="FRONT_END_URL">
     <label description="FRONT_END_URL" languagecode="1033" />
   </displayname>
