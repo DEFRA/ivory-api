@@ -90,7 +90,7 @@
                   <sco:Collection x:TypeArguments="Variable" x:Key="Variables" />
                   <sco:Collection x:TypeArguments="Activity" x:Key="Activities">
                     <Sequence DisplayName="SetVisibilityStep2: Hide Previous Capacity">
-                      <mcwc:SetVisibility ControlId="cre2c_previouscapacity" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="cre2c_ivorysection10case" IsVisible="True" />
+                      <mcwc:SetVisibility ControlId="cre2c_previouscapacity" ControlType="standard" Entity="[InputEntities(&quot;primaryEntity&quot;)]" EntityName="cre2c_ivorysection10case" IsVisible="False" />
                     </Sequence>
                     <Sequence DisplayName="SetAttributeValueStep3: Clear Previous Capacity">
                       <Sequence.Variables>
