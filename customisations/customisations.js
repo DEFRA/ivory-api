@@ -270,6 +270,8 @@ const IVORY_SECTION_10_VIEWED_BY = 'cre2c_lockedby';
 
 // Optional: Add command button for removing lock, not required as it also works with editing lockedby field
 this.unlockThisCase = primaryControl => {
+  'use strict';
+
    const formContext = primaryControl;
    const userName = Xrm.Utility.getGlobalContext().userSettings.userName;
    const recordId = formContext.data.entity.getId();
@@ -291,6 +293,8 @@ this.unlockThisCase = primaryControl => {
 
 // If another user is viewing case, lock it
 this.lockThisCaseIfViewed = executionContext => {
+  'use strict';
+
   const formContext = executionContext.getFormContext();
   const userName = Xrm.Utility.getGlobalContext().userSettings.userName;
   const recordId = formContext.data.entity.getId();
@@ -302,7 +306,7 @@ this.lockThisCaseIfViewed = executionContext => {
       const viewedDate = tempDate.toLocaleString();
 
       if (viewedBy !== userName) {
-        if (viewedBy != null && viewedBy != '') {
+        if (viewedBy !== null && viewedBy !== '') {
           
           const LOCK_EXPIRY = 2 * 60 * 60 * 1000; /* Lock Expire after 2 hours or by pressing save and close */
           if ( ((new Date) - tempDate) > LOCK_EXPIRY ) {
@@ -325,7 +329,7 @@ this.lockThisCaseIfViewed = executionContext => {
       } // End: viewedBy
     },
     function (error) {
-      console.log(error.message);
+      formContext.ui.setFormNotification(error.message, 'INFO', myUniqueId);
     }
   );
 
@@ -338,14 +342,16 @@ this.lockThisCaseIfViewed = executionContext => {
 
 // If another user is viewing case, lock it
 this.clearLockOnClose = executionContext => {
+  'use strict';
+
   var eventArgs = executionContext.getEventArgs();
   // Handle Save and close 2, Save and New 59
-  if (eventArgs.getSaveMode() == 59 || eventArgs.getSaveMode() == 2) {
+  if (eventArgs.getSaveMode() === 59 || eventArgs.getSaveMode() === 2) {
     const formContext = executionContext.getFormContext();
     const recordId = formContext.data.entity.getId();
     const userName = Xrm.Utility.getGlobalContext().userSettings.userName;
 
-    if (formContext.getAttribute(IVORY_SECTION_10_VIEWED_BY).getValue() == userName) {
+    if (formContext.getAttribute(IVORY_SECTION_10_VIEWED_BY).getValue() === userName) {
         formContext.getAttribute(IVORY_SECTION_10_VIEWED_BY).setValue('');
         const msgOnClose = 'This record is unlocked for editing';
         formContext.ui.setFormNotification(msgOnClose, 'INFO', myUniqueId);
@@ -399,10 +405,10 @@ this.formOnLoad = async (executionContext, section) => {
 
   // New Multiple User edit check
   const entityName = formContext.data.entity.getEntityName();
-  if (entityName == IVORY_SECTION_10_TABLE) {
+  if (entityName === IVORY_SECTION_10_TABLE) {
     lockThisCaseIfViewed(executionContext);
   }
-  
+
 }
 
 this.prescribedInstituteFormOnLoad = executionContext => {
@@ -427,7 +433,7 @@ this.formOnSave = executionContext => {
 
   // New Multiple User edit check
   const entityName = formContext.data.entity.getEntityName();
-  if (entityName == IVORY_SECTION_10_TABLE) {
+  if (entityName === IVORY_SECTION_10_TABLE) {
     clearLockOnClose(executionContext);
   }
 
