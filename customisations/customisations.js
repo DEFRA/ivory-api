@@ -92,7 +92,8 @@ const DataVerseFieldName = {
   WHY_IVORY_EXEMPT: 'cre2c_whyivoryexempt',
   WHY_IVORY_INTEGRAL: 'cre2c_whyivoryintegral',
   WHY_OUTSTANDINLY_VALUABLE: 'cre2c_whyoutstandinglyvaluable',
-  WORK_FOR_A_BUSINESS: 'cre2c_workforabusiness'
+  WORK_FOR_A_BUSINESS: 'cre2c_workforabusiness',
+
 };
 
 const ExemptionTypeLookup = {
@@ -182,6 +183,178 @@ const Section10OnlyStatuses = [
 const frontEndCertificateDownloadRoute = 'download-certificate'
 const frontEndPIDownloadRoute = 'pass-data-to-pi/application-details'
 
+const alwaysEditableControls = [
+    DataVerseFieldName.ASSESSMENT_SUMMARY,
+    DataVerseFieldName.ASSESSMENT_SUPPORTING_EVIDENCE,
+    DataVerseFieldName.CERTIFICATE_ISSUE_DATE,
+    DataVerseFieldName.CERTIFICATE_LINK_EXPIRY,
+    DataVerseFieldName.CERTIFICATE_NUMBER,
+    DataVerseFieldName.CERTIFICATE,
+    DataVerseFieldName.DATE_COI_SENT_TO_PI,
+    DataVerseFieldName.DATE_DETAILS_SENT_TO_PI,
+    DataVerseFieldName.DATE_OF_PI_RESPONSE,
+    DataVerseFieldName.DATE_RECOMMENDATION_RECEIVED,
+    DataVerseFieldName.DATE_SENT_TO_PI,
+    DataVerseFieldName.DEADLINE_FOR_PI_RESPONSE,
+    DataVerseFieldName.GROUP_REGISTRATION,
+    DataVerseFieldName.NUMBER_OF_ITEMS,
+    DataVerseFieldName.OWNER,
+    DataVerseFieldName.PI_ASSIGNMENT_NOTES,
+    DataVerseFieldName.PI_LINK_EXPIRY,
+    DataVerseFieldName.PRESCRIBED_INSTITUTE,
+    DataVerseFieldName.STATE_CODE,
+    DataVerseFieldName.STATUS,
+    DataVerseFieldName.TARGET_COMPLETION_DATE,
+    'cre2c_lockedby'
+  ];
+
+this._setAllFieldsToReadOnly = async (formContext) => {
+  'use strict';
+
+  const formControls = formContext.getControl();
+
+  formControls.forEach(control => {
+    if (!alwaysEditableControls.includes(control.name)) {
+      control.setDisabled(true);
+    }
+  });
+}
+
+
+this._setAllFieldsToReadWrite = async (formContext) => {
+  'use strict';
+
+  const formControls = formContext.getControl();
+
+  formControls.forEach(control => {
+    if (!alwaysEditableControls.includes(control.name)) {
+      control.setDisabled(false);
+    }
+  });
+}
+
+this._setAllPiFieldsToReadOnly = formContext => {
+  'use strict';
+
+  const formControls = formContext.getControl();
+
+  formControls.forEach(control => {
+    control.setDisabled(true);
+  });
+}
+
+this._setFieldVisibilityBasedOnCurrentUserRoles = async (formContext) => {
+  'use strict';
+
+  const currentUserRoles = Xrm.Utility.getGlobalContext().userSettings.roles
+    .getAll()
+    .map(role => role.name);
+
+  const isManuallyCreated = formContext.getAttribute(DataVerseFieldName.MANUALLY_CREATED).getValue();
+
+  const currentUserIsSuperuser = currentUserRoles.includes(IVORY_SUPERUSER_ROLE);
+  if (!isManuallyCreated && !currentUserIsSuperuser) {
+    this._setAllFieldsToReadOnly(formContext);
+  }
+
+  const paymentReferenceControl = formContext.getControl(DataVerseFieldName.PAYMENT_REFERENCE);
+  paymentReferenceControl.setDisabled(!isManuallyCreated);
+}
+
+const myUniqueId = '_ivoryNotificationId';
+
+// -------- Handle editing by multiple users
+const startEditingDate = new Date();
+const IVORY_SECTION_10_TABLE = 'cre2c_ivorysection10case';
+const IVORY_SECTION_10_VIEWED_BY = 'cre2c_lockedby';
+
+// Optional: Add command button for removing lock, not required as it also works with editing lockedby field
+this.unlockThisCase = primaryControl => {
+   const formContext = primaryControl;
+   const userName = Xrm.Utility.getGlobalContext().userSettings.userName;
+   const recordId = formContext.data.entity.getId();
+   oldViewBy = formContext.getAttribute(IVORY_SECTION_10_VIEWED_BY).getValue(); // Gets value from Form
+   let data = {
+        IVORY_SECTION_10_VIEWED_BY: ''
+      }
+
+    formContext.getAttribute(IVORY_SECTION_10_VIEWED_BY).setValue('');
+    formContext.data.refresh(true).then(function() {
+      formContext.ui.clearFormNotification(myUniqueId);
+      formContext.ui.setFormNotification('This record is unlocked for editing' , 'INFO', 'Unlocked');
+      _setAllFieldsToReadWrite(formContext);
+
+    }, function(error) {
+       formContext.ui.setFormNotification(error, 'INFO', 'Unlocked');
+    });
+}
+
+// If another user is viewing case, lock it
+this.lockThisCaseIfViewed = executionContext => {
+  const formContext = executionContext.getFormContext();
+  const userName = Xrm.Utility.getGlobalContext().userSettings.userName;
+  const recordId = formContext.data.entity.getId();
+
+  Xrm.WebApi.retrieveRecord(IVORY_SECTION_10_TABLE, recordId, '?$select='+ IVORY_SECTION_10_VIEWED_BY + ',modifiedon').then(
+    function success(result) {
+      const viewedBy = result[IVORY_SECTION_10_VIEWED_BY];
+      const tempDate = new Date(result.modifiedon);
+      const viewedDate = tempDate.toLocaleString();
+
+      if (viewedBy !== userName) {
+        if (viewedBy != null && viewedBy != '') {
+          
+          const LOCK_EXPIRY = 2 * 60 * 60 * 1000; /* Lock Expire after 2 hours or by pressing save and close */
+          if ( ((new Date) - tempDate) > LOCK_EXPIRY ) {
+            const msgLockedExpired = `${viewedBy} was viewing or editing this record {viewedDate}. Lock expired`;
+            formContext.ui.setFormNotification(msgLockedExpired, 'INFO', myUniqueId);
+            formContext.getAttribute(IVORY_SECTION_10_VIEWED_BY).setValue(userName);
+            formContext.data.save();
+          } else {
+
+            const msgLocked = `${viewedBy} is viewing or editing this record. Once ${viewedBy} exits this case you will be able to view it or make changes`;
+            formContext.ui.setFormNotification(msgLocked, 'INFO', myUniqueId);
+            _setAllFieldsToReadOnly(formContext);
+          }
+
+        } else {
+          // Exclusive editing for current user
+          formContext.getAttribute(IVORY_SECTION_10_VIEWED_BY).setValue(userName);
+          formContext.data.save();
+      }
+      } // End: viewedBy
+    },
+    function (error) {
+      console.log(error.message);
+    }
+  );
+
+  // Wait before clearing the notification
+  window.setTimeout(() => {
+    formContext.ui.clearFormNotification(myUniqueId);
+  }, 5000);
+
+}
+
+// If another user is viewing case, lock it
+this.clearLockOnClose = executionContext => {
+  var eventArgs = executionContext.getEventArgs();
+  // Handle Save and close 2, Save and New 59
+  if (eventArgs.getSaveMode() == 59 || eventArgs.getSaveMode() == 2) {
+    const formContext = executionContext.getFormContext();
+    const recordId = formContext.data.entity.getId();
+    const userName = Xrm.Utility.getGlobalContext().userSettings.userName;
+
+    if (formContext.getAttribute(IVORY_SECTION_10_VIEWED_BY).getValue() == userName) {
+        formContext.getAttribute(IVORY_SECTION_10_VIEWED_BY).setValue('');
+        const msgOnClose = 'This record is unlocked for editing';
+        formContext.ui.setFormNotification(msgOnClose, 'INFO', myUniqueId);
+      }
+  }
+}
+
+// -------- End: Handle editing by multiple users
+
 this.formOnLoad = async (executionContext, section) => {
   'use strict';
 
@@ -223,6 +396,13 @@ this.formOnLoad = async (executionContext, section) => {
   }
 
   this._setFieldVisibilityBasedOnCurrentUserRoles(formContext);
+
+  // New Multiple User edit check
+  const entityName = formContext.data.entity.getEntityName();
+  if (entityName == IVORY_SECTION_10_TABLE) {
+    lockThisCaseIfViewed(executionContext);
+  }
+  
 }
 
 this.prescribedInstituteFormOnLoad = executionContext => {
@@ -244,7 +424,12 @@ this.formOnSave = executionContext => {
   'use strict';
 
   const formContext = executionContext.getFormContext();
-  const myUniqueId = '_ivoryNotificationId';
+
+  // New Multiple User edit check
+  const entityName = formContext.data.entity.getEntityName();
+  if (entityName == IVORY_SECTION_10_TABLE) {
+    clearLockOnClose(executionContext);
+  }
 
   // Display the form level notification as an INFO
   formContext.ui.setFormNotification('Record saved', 'INFO', myUniqueId);
@@ -599,6 +784,8 @@ this.hasPreviousOwnerOnChange = executionContext => {
   
   previousApplicantSection.setVisible(hasPreviousOwner);
   previousOwnerSection.setVisible(hasPreviousOwner);
+
+  // sectionObj.setVisible(false); //to hide
 }
 
 this.setStatuses = (formContext, isSection2) => {
@@ -677,70 +864,6 @@ this.getEnvironmentVariableValue = async schemaName => {
   }
 
   return value;
-}
-
-this._setFieldVisibilityBasedOnCurrentUserRoles = async (formContext) => {
-  'use strict';
-
-  const currentUserRoles = Xrm.Utility.getGlobalContext().userSettings.roles
-    .getAll()
-    .map(role => role.name);
-
-  const isManuallyCreated = formContext.getAttribute(DataVerseFieldName.MANUALLY_CREATED).getValue();
-
-  const currentUserIsSuperuser = currentUserRoles.includes(IVORY_SUPERUSER_ROLE);
-  if (!isManuallyCreated && !currentUserIsSuperuser) {
-    this._setAllFieldsToReadOnly(formContext);
-  }
-
-  const paymentReferenceControl = formContext.getControl(DataVerseFieldName.PAYMENT_REFERENCE);
-  paymentReferenceControl.setDisabled(!isManuallyCreated);
-}
-
-this._setAllFieldsToReadOnly = async (formContext) => {
-  'use strict';
-
-  const formControls = formContext.getControl();
-
-  const alwaysEditableControls = [
-    DataVerseFieldName.ASSESSMENT_SUMMARY,
-    DataVerseFieldName.ASSESSMENT_SUPPORTING_EVIDENCE,
-    DataVerseFieldName.CERTIFICATE_ISSUE_DATE,
-    DataVerseFieldName.CERTIFICATE_LINK_EXPIRY,
-    DataVerseFieldName.CERTIFICATE_NUMBER,
-    DataVerseFieldName.CERTIFICATE,
-    DataVerseFieldName.DATE_COI_SENT_TO_PI,
-    DataVerseFieldName.DATE_DETAILS_SENT_TO_PI,
-    DataVerseFieldName.DATE_OF_PI_RESPONSE,
-    DataVerseFieldName.DATE_RECOMMENDATION_RECEIVED,
-    DataVerseFieldName.DATE_SENT_TO_PI,
-    DataVerseFieldName.DEADLINE_FOR_PI_RESPONSE,
-    DataVerseFieldName.GROUP_REGISTRATION,
-    DataVerseFieldName.NUMBER_OF_ITEMS,
-    DataVerseFieldName.OWNER,
-    DataVerseFieldName.PI_ASSIGNMENT_NOTES,
-    DataVerseFieldName.PI_LINK_EXPIRY,
-    DataVerseFieldName.PRESCRIBED_INSTITUTE,
-    DataVerseFieldName.STATE_CODE,
-    DataVerseFieldName.STATUS,
-    DataVerseFieldName.TARGET_COMPLETION_DATE
-  ];
-
-  formControls.forEach(control => {
-    if (!alwaysEditableControls.includes(control.name)) {
-      control.setDisabled(true);
-    }
-  });
-}
-
-this._setAllPiFieldsToReadOnly = formContext => {
-  'use strict';
-
-  const formControls = formContext.getControl();
-
-  formControls.forEach(control => {
-    control.setDisabled(true);
-  });
 }
 
 // Generates a random submission reference in the same format as that which is generated by the front end.
