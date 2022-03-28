@@ -93,7 +93,7 @@ const DataVerseFieldName = {
   WHY_IVORY_INTEGRAL: 'cre2c_whyivoryintegral',
   WHY_OUTSTANDINLY_VALUABLE: 'cre2c_whyoutstandinglyvaluable',
   WORK_FOR_A_BUSINESS: 'cre2c_workforabusiness',
-
+  LOCKED_BY: 'cre2c_lockedby'
 };
 
 const ExemptionTypeLookup = {
@@ -205,7 +205,7 @@ const alwaysEditableControls = [
     DataVerseFieldName.STATE_CODE,
     DataVerseFieldName.STATUS,
     DataVerseFieldName.TARGET_COMPLETION_DATE,
-    'cre2c_lockedby'
+    DataVerseFieldName.LOCKED_BY
   ];
 
 this._setAllFieldsToReadOnly = async (formContext) => {
