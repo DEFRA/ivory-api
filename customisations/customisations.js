@@ -220,16 +220,23 @@ this._setAllFieldsToReadOnly = async (formContext) => {
   });
 }
 
-
-this._setAllFieldsToReadWrite = async (formContext) => {
+this._lockAllFields = async (formContext) => {
   'use strict';
 
   const formControls = formContext.getControl();
 
   formControls.forEach(control => {
-    if (!alwaysEditableControls.includes(control.name)) {
+      control.setDisabled(true);
+  });
+}
+
+this._unlockAllFields = async (formContext) => {
+  'use strict';
+
+  const formControls = formContext.getControl();
+
+  formControls.forEach(control => {
       control.setDisabled(false);
-    }
   });
 }
 
@@ -262,46 +269,44 @@ this._setFieldVisibilityBasedOnCurrentUserRoles = async (formContext) => {
 }
 
 const myUniqueId = '_ivoryNotificationId';
+const myUniqueIdLongDuration = '_ivoryLongDurationNotificationId';
 
 // -------- Handle editing by multiple users
 const startEditingDate = new Date();
 const IVORY_SECTION_10_TABLE = 'cre2c_ivorysection10case';
 const IVORY_SECTION_10_VIEWED_BY = 'cre2c_lockedby';
+const IVORY_SECTION_2_TABLE = 'cre2c_ivorysection2case';
+const IVORY_SECTION_2_VIEWED_BY = 'cre2c_lockedby';
 
 // Optional: Add command button for removing lock, not required as it also works with editing lockedby field
-this.unlockThisCase = primaryControl => {
+this.unlockThisCase = (primaryControl, lockedByField) => {
   'use strict';
 
    const formContext = primaryControl;
    const userName = Xrm.Utility.getGlobalContext().userSettings.userName;
    const recordId = formContext.data.entity.getId();
-   oldViewBy = formContext.getAttribute(IVORY_SECTION_10_VIEWED_BY).getValue(); // Gets value from Form
-   let data = {
-        IVORY_SECTION_10_VIEWED_BY: ''
-      }
-
-    formContext.getAttribute(IVORY_SECTION_10_VIEWED_BY).setValue('');
-    formContext.data.refresh(true).then(function() {
-      formContext.ui.clearFormNotification(myUniqueId);
-      formContext.ui.setFormNotification('This record is unlocked for editing' , 'INFO', 'Unlocked');
-      _setAllFieldsToReadWrite(formContext);
-
-    }, function(error) {
-       formContext.ui.setFormNotification(error, 'INFO', 'Unlocked');
+   oldViewBy = formContext.getAttribute(lockedByField).getValue(); // Gets value from Form
+   formContext.getAttribute(lockedByField).setValue('');
+   formContext.data.refresh(true).then(function() {
+     formContext.ui.clearFormNotification(myUniqueIdLongDuration);
+     formContext.ui.setFormNotification('This record is unlocked for editing' , 'INFO', myUniqueIdLongDuration);
+     _unlockAllFields(formContext);
+     }, function(error) {
+      formContext.ui.setFormNotification(error, 'INFO', 'Unlocked');
     });
 }
 
-// If another user is viewing case, lock it
-this.lockThisCaseIfViewed = executionContext => {
+// If another user is viewing case, lock it 
+this.lockThisCaseIfViewed = (executionContext, lockTable, lockedByField) => {
   'use strict';
 
   const formContext = executionContext.getFormContext();
   const userName = Xrm.Utility.getGlobalContext().userSettings.userName;
   const recordId = formContext.data.entity.getId();
 
-  Xrm.WebApi.retrieveRecord(IVORY_SECTION_10_TABLE, recordId, '?$select='+ IVORY_SECTION_10_VIEWED_BY + ',modifiedon').then(
+  Xrm.WebApi.retrieveRecord(lockTable, recordId, '?$select='+ lockedByField + ',modifiedon').then(
     function success(result) {
-      const viewedBy = result[IVORY_SECTION_10_VIEWED_BY];
+      const viewedBy = result[lockedByField];
       const tempDate = new Date(result.modifiedon);
       const viewedDate = tempDate.toLocaleString();
 
@@ -311,37 +316,37 @@ this.lockThisCaseIfViewed = executionContext => {
           const LOCK_EXPIRY = 2 * 60 * 60 * 1000; /* Lock Expire after 2 hours or by pressing save and close */
           if ( ((new Date) - tempDate) > LOCK_EXPIRY ) {
             const msgLockedExpired = `${viewedBy} was viewing or editing this record {viewedDate}. Lock expired`;
-            formContext.ui.setFormNotification(msgLockedExpired, 'INFO', myUniqueId);
-            formContext.getAttribute(IVORY_SECTION_10_VIEWED_BY).setValue(userName);
+            formContext.ui.setFormNotification(msgLockedExpired, 'INFO', myUniqueIdLongDuration);
+            formContext.getAttribute(lockedByField).setValue(userName);
             formContext.data.save();
           } else {
 
             const msgLocked = `${viewedBy} is viewing or editing this record. Once ${viewedBy} exits this case you will be able to view it or make changes`;
-            formContext.ui.setFormNotification(msgLocked, 'INFO', myUniqueId);
-            _setAllFieldsToReadOnly(formContext);
+            formContext.ui.setFormNotification(msgLocked, 'INFO', myUniqueIdLongDuration);
+            _lockAllFields(formContext);
           }
 
         } else {
           // Exclusive editing for current user
-          formContext.getAttribute(IVORY_SECTION_10_VIEWED_BY).setValue(userName);
+          formContext.getAttribute(lockedByField).setValue(userName);
           formContext.data.save();
       }
       } // End: viewedBy
     },
     function (error) {
-      formContext.ui.setFormNotification(error.message, 'INFO', myUniqueId);
+      formContext.ui.setFormNotification(error.message, 'INFO', myUniqueIdLongDuration);
     }
   );
 
   // Wait before clearing the notification
   window.setTimeout(() => {
-    formContext.ui.clearFormNotification(myUniqueId);
-  }, 5000);
+    formContext.ui.clearFormNotification(myUniqueIdLongDuration);
+  }, 15000);
 
 }
 
 // If another user is viewing case, lock it
-this.clearLockOnClose = executionContext => {
+this.clearLockOnClose = (executionContext, lockedByField) => {
   'use strict';
 
   var eventArgs = executionContext.getEventArgs();
@@ -351,10 +356,10 @@ this.clearLockOnClose = executionContext => {
     const recordId = formContext.data.entity.getId();
     const userName = Xrm.Utility.getGlobalContext().userSettings.userName;
 
-    if (formContext.getAttribute(IVORY_SECTION_10_VIEWED_BY).getValue() === userName) {
-        formContext.getAttribute(IVORY_SECTION_10_VIEWED_BY).setValue('');
+    if (formContext.getAttribute(lockedByField).getValue() === userName) {
+        formContext.getAttribute(lockedByField).setValue('');
         const msgOnClose = 'This record is unlocked for editing';
-        formContext.ui.setFormNotification(msgOnClose, 'INFO', myUniqueId);
+        formContext.ui.setFormNotification(msgOnClose, 'INFO', myUniqueIdLongDuration);
       }
   }
 }
@@ -406,9 +411,11 @@ this.formOnLoad = async (executionContext, section) => {
   // New Multiple User edit check
   const entityName = formContext.data.entity.getEntityName();
   if (entityName === IVORY_SECTION_10_TABLE) {
-    lockThisCaseIfViewed(executionContext);
+    lockThisCaseIfViewed(executionContext, entityName, IVORY_SECTION_10_VIEWED_BY);
   }
-
+  if (entityName === IVORY_SECTION_2_TABLE) {
+    lockThisCaseIfViewed(executionContext, entityName, IVORY_SECTION_2_VIEWED_BY);
+  }
 }
 
 this.prescribedInstituteFormOnLoad = executionContext => {
@@ -434,9 +441,11 @@ this.formOnSave = executionContext => {
   // New Multiple User edit check
   const entityName = formContext.data.entity.getEntityName();
   if (entityName === IVORY_SECTION_10_TABLE) {
-    clearLockOnClose(executionContext);
+    clearLockOnClose(executionContext, IVORY_SECTION_10_VIEWED_BY);
   }
-
+  if (entityName === IVORY_SECTION_2_TABLE) {
+    clearLockOnClose(executionContext, IVORY_SECTION_2_VIEWED_BY);
+  }
   // Display the form level notification as an INFO
   formContext.ui.setFormNotification('Record saved', 'INFO', myUniqueId);
 
